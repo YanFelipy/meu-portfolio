@@ -1,0 +1,175 @@
+   /* Imports */
+   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+   .corpo-portfolio,
+   ul {
+       padding: 0px;
+       margin: 0px;
+   }
+
+   /* Header */
+   .corpo-portfolio .header {
+       display: flex;
+       height: 70px;
+       background-color: rgb(68, 68, 68);
+       padding: 1rem;
+       box-sizing: border-box;
+       align-items: center;
+       justify-content: space-around;
+       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.487);
+   }
+
+   .corpo-portfolio .header #logo-img {
+       width: 50px;
+       border-radius: 30px;
+   }
+
+   .corpo-portfolio .header #logo-img:hover {
+       animation: Rotate 0.9s ease;
+   }
+
+   .corpo-portfolio .header .navegacao .menu {
+       display: flex;
+       list-style: none;
+       gap: .5rem;
+   }
+
+   .corpo-portfolio .header .navegacao .menu a {
+       display: block;
+       padding: .5rem;
+       text-decoration: none;
+       font-size: 18px;
+       font-family: 'Roboto', sans-serif;
+       color: white;
+       cursor: pointer;
+   }
+
+   .corpo-portfolio .header .navegacao .menu a:hover {
+       color: rgba(255, 196, 0, 0.987);
+   }
+
+   .corpo-portfolio .header .navegacao #btn-mobile {
+       display: none;
+   }
+
+   .corpo-portfolio .header .navegacao .menu .button-up {
+       display: none;
+   }
+
+
+   /* Animations */
+
+   @keyframes Rotate {
+       100% {
+           transform: rotate(360deg);
+       }
+   }
+
+
+   /* Media Queries */
+
+
+   @media (max-width:600px) {
+       .corpo-portfolio .header {
+           justify-content: space-between;
+           z-index: 1000000;
+       }
+
+       .corpo-portfolio .header #logo-img {
+           width: 40px;
+           border-radius: 30px;
+       }
+
+       .corpo-portfolio .header .navegacao #btn-mobile {
+           display: flex;
+       }
+
+       .corpo-portfolio .header .navegacao .menu {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           position: absolute;
+           width: 100%;
+           top: 70px;
+           right: 0px;
+           background-color: #5e5e5e;
+           height: 0px;
+           transition: .6s;
+           z-index: 100;
+           visibility: hidden;
+           overflow-y: hidden;
+           padding: 1rem 0;
+           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.487)
+       }
+
+       .corpo-portfolio .header .active .menu {
+           height: 50vh;
+           align-items: center;
+           overflow-y: auto;
+           visibility: visible;
+
+       }
+
+       .corpo-portfolio .header .navegacao .menu .links-menu {
+           border-bottom: rgba(255, 196, 0) 1px solid;
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .corpo-portfolio .header .navegacao .menu .button-up {
+           margin-top: 10px;
+           display: flex;
+       }
+
+       .corpo-portfolio .header .navegacao .menu .btn-mob {
+           background-color: transparent;
+           border: none;
+           cursor: pointer;
+       }
+
+       .corpo-portfolio .header .navegacao .menu .button-up .seta-circular {
+           background-color: transparent;
+           width: 60px;
+           height: 40px;
+           fill: rgba(255, 196, 0);
+
+       }
+
+
+       .corpo-portfolio .header .navegacao .menu a {
+           font-weight: 500;
+           font-size: 20px;
+           padding: 1rem 0;
+           margin: 5px 0px;
+       }
+
+       .corpo-portfolio .header .navegacao #btn-mobile {
+           display: flex;
+           padding: .5rem 1rem;
+           border: none;
+
+           background: none;
+           cursor: pointer;
+           gap: .5rem
+       }
+
+       .corpo-portfolio .header .navegacao #btn-mobile #hamburguer {
+           border-top: solid 2px;
+           color: rgba(255, 196, 0);
+           width: 20px;
+
+       }
+
+       .corpo-portfolio .header .navegacao #btn-mobile #hamburguer:after,
+       .corpo-portfolio .header .navegacao #btn-mobile #hamburguer:before {
+           content: '';
+           display: block;
+           background-color: currentColor;
+           margin-top: 5px;
+           height: 2px;
+           width: 20px;
+       }
+
+   }
