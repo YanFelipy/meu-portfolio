@@ -1,10 +1,25 @@
    /* Imports */
    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+   :root {
+       --title: 'Rubik Mono One', sans-serif;
+       --sub-title: 'Rubik', sans-serif;
+       --desc: 'Roboto', sans-serif;
+       --yellow: rgba(255, 196, 0, 0.987);
+   }
 
    .corpo-portfolio,
    ul {
        padding: 0px;
        margin: 0px;
+       overflow-x: hidden;
+   }
+
+   
+   .corpo-portfolio {
+       background-color: #5e5e5e;
    }
 
    /* Header */
@@ -39,13 +54,13 @@
        padding: .5rem;
        text-decoration: none;
        font-size: 18px;
-       font-family: 'Roboto', sans-serif;
+       font-family: var(--desc);
        color: white;
        cursor: pointer;
    }
 
    .corpo-portfolio .header .navegacao .menu a:hover {
-       color: rgba(255, 196, 0, 0.987);
+       color: var(--yellow);
    }
 
    .corpo-portfolio .header .navegacao #btn-mobile {
@@ -57,19 +72,174 @@
    }
 
 
+
+   /*  Main */
+
+   .container-xxl .intro-portfolio {
+       width: 100%;
+       padding: 30px 0px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+
+
+   }
+
+   .container-xxl .intro-portfolio .apresentacao {
+       margin: 20px 0px;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+
+   }
+
+
+   .container-xxl .intro-portfolio .apresentacao .titulo-principal {
+       text-align: center;
+       color: var(--yellow);
+       font-family: 'Rubik Mono One', sans-serif;
+       font-size: 70px;
+       letter-spacing: 0px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       animation: LeftAnimation 1.5s ease;
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .titulo-principal .tp-2 {
+       font-size: 20px;
+       text-align: center;
+       color: rgb(255, 255, 255);
+       font-family: var(--sub-title);
+       letter-spacing: 10px;
+       line-height: 50px;
+       margin-bottom: 40px;
+   }
+
+   .container-xxl .intro-portfolio .imagem-principal {
+       width: 55%;
+       border-radius: 80px;
+
+
+   }
+
+
+
+
+   .container-xxl .intro-portfolio .biografia-main {
+    border-left: solid 2px rgba(255, 196, 0, 0.987);
+    border-right: solid 2px rgba(255, 196, 0, 0.987);
+       margin-top: 80px;
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0px;
+   }
+   .container-xxl .intro-portfolio .biografia-main .texto-biografia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.container-xxl .intro-portfolio .biografia-main .texto-biografia .descricao-titulo {
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--desc);
+    color: rgb(216, 216, 216);
+
+}
+
+
+   .container-xxl .intro-portfolio .biografia-main .sobre-mim {
+       
+       display: flex;
+       justify-content: space-evenly;
+       text-align: center;
+       font-size: 50px;
+      
+       padding: 10px;
+       width: 50%;
+   }
+
+   .container-xxl .intro-portfolio .biografia-main .sobre-mim .seta-circular {
+       fill: rgba(255, 255, 255, 0.987);
+       transform: rotate(-90deg);
+       width: 50px;    
+   }
+
+   .container-xxl .intro-portfolio .biografia-main .sobre-mim .sobre-mim-title{
+    color: var(--yellow);
+       font-family: var(--title);
+       font-size: 50px;
+       animation: RightAnimation 1.5s ease;
+      
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    /* Animations */
 
-   @keyframes Rotate {
+   @keyframes
+    Rotate {
        100% {
            transform: rotate(360deg);
        }
+     
    }
+   
+  @keyframes LeftAnimation {
+    0% {
+        transform:translateX(-1190px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+
+ }
+ @keyframes RightAnimation {
+    0% {
+        transform:translateX(1190px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+
+ }  
+    
+   
+
+
+
+
+
+
 
 
    /* Media Queries */
 
 
-   @media (max-width:600px) {
+   @media (max-width: 768px) {
        .corpo-portfolio .header {
            justify-content: space-between;
            z-index: 1000000;
@@ -133,7 +303,7 @@
            background-color: transparent;
            width: 60px;
            height: 40px;
-           fill: rgba(255, 196, 0);
+           fill:white;
 
        }
 
@@ -172,4 +342,42 @@
            width: 20px;
        }
 
+       /* Main */
+
+       .container-xxl .intro-portfolio .apresentacao {
+           margin: 20px 0px;
+           width: 100%;
+           flex-direction: column;
+
+       }
+
+       .container-xxl .intro-portfolio .apresentacao .texto-main {
+           display: flex;
+           align-items: center;
+           z-index: 0;
+           width: 100%;
+       }
+
+       .container-xxl .intro-portfolio .imagem-principal {
+           width: 100%;
+           border-radius: 80px;
+           z-index: 20;
+
+       }
+       .container-xxl .intro-portfolio .biografia-main {
+           flex-direction: column;
+       }
+
+       .container-xxl .intro-portfolio .biografia-main .sobre-mim{
+           flex-direction: column;
+           align-items: center;
+           
+       }
+       .container-xxl .intro-portfolio .biografia-main .sobre-mim .seta-circular {
+        fill: white;
+        transform: rotate(-0deg);
+        width: 50px;
+        margin-bottom: 30px;
+         
+    }
    }
