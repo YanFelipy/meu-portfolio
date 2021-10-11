@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="corpo-portfolio">
+<body class="corpo-portfolio bg-gradient bg-light">
     <header class="header">
         <a id="logo-link" href="#inicio">
             <img id="logo-img" src="./img/android-chrome-512x512.png" alt="Logo" />
@@ -21,9 +21,6 @@
                 <span id="hamburguer"></span>
             </button>
             <ul class="menu" role="menu">
-                <li class="links-menu">
-                    <a id="inicio" href="#inicio">Início</a>
-                </li>
                 <li class="links-menu">
                     <a id="portfolio" href="#portfolio">Portfólio</a>
                 </li>
@@ -45,8 +42,8 @@
         </nav>
     </header>
 
-    <div class="container-xxl">
-        <main class="intro-portfolio ">
+    <div class="container-xxl container-sobre">
+        <main class="intro-portfolio" id="sobre-mim">
             <div class="apresentacao ">
                 <div class="texto-main">
                     <h1 class="titulo-principal">YAN FELIPY<br><span class="tp-2">DESENVOLVEDOR FRONT-END</span>
@@ -57,11 +54,22 @@
 
             <div class="biografia-main">
                 <div class="texto-biografia">
-                    <p class="descricao-titulo">&nbsp;&nbsp; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum velit sequi incidunt inventore molestiae maxime rerum dolores, recusandae, consequuntur voluptatum sunt voluptatem numquam laborum sed?
-                         Necessitatibus magnam doloribus repudiandae fuga. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos nulla ad quasi natus facilis voluptas temporibus. Consequatur ducimus, esse incidunt quis autem laudantium tenetur dicta similique praesentium. Sint, iusto quaerat.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur temporibus iste, neque optio enim nesciunt eaque a rerum? Veniam, dolores saepe. Non cupiditate laborum itaque odio laudantium nostrum rem. </p>
+                    <p class="descricao-titulo">&nbsp;&nbsp; Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Nostrum velit sequi incidunt inventore molestiae maxime rerum dolores, recusandae, consequuntur
+                        voluptatum sunt voluptatem numquam laborum sed?
+                        Necessitatibus magnam doloribus repudiandae fuga. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Quos nulla ad quasi natus facilis voluptas temporibus. Consequatur ducimus,
+                        esse incidunt quis autem laudantium tenetur dicta similique praesentium. Sint, iusto quaerat.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur temporibus iste, neque
+                        optio enim nesciunt eaque a rerum? Veniam, dolores saepe. Non cupiditate laborum itaque odio
+                        laudantium nostrum rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique
+                        voluptatem quaerat esse soluta ad sed impedit incidunt. Magnam tempore illum itaque doloribus
+                        veritatis consequatur ducimus delectus esse voluptates dolorem? Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Voluptate delectus eos recusandae tempore dolores pariatur.
+                        Similique voluptatibus, sequi nulla expedita excepturi, voluptate et quam repudiandae autem
+                        fugiat eaque aspernatur nemo. </p>
                 </div>
-                <div class="sobre-mim" id="sobre-mim">
+                <div class="sobre-mim">
                     <svg xmlns="http://www.w3.org/2000/svg" class="seta-circular" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
@@ -74,6 +82,71 @@
             </div>
         </main>
     </div>
+    <div class="container-xxl container-portfolio">
+        <section class="skills-projetos">
+
+            <div class="section-portfolio-titulo">
+                <h1 class="confira">
+                    PORTFÓLIO
+                </h1>
+                <p class="desc">CONFIRA ALGUNS PROJETOS!</p>
+            </div>
+
+            <div class="box-portfolio" id="portfolio"">
+
+               <div class=" projeto-facebook">
+                <div class="textos-projeto-facebook">
+                    <h2 class="titulo-projeto-facebook">Página Web Conceitual - Facebook</h2>
+                    <p class="desc-projeto-facebook">Meu primeiro projeto completo em CSS & HTML totalmente responsivo,
+                        teve como objetivo me auxiliar no aprendizado das propriedades e também no uso das tecnologias
+                        citadas abaixo. Uma página conceitual do Facebook, com formulário de inscrição e entrada na
+                        possível rede social, com apenas o mecanismo padrão de redirecionamento de páginas entre si,
+                        sendo elas a página de inicial(login) e página de inscrição(sign up).</p>
+                </div>
+                <div class="fotos-projetos-facebook">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="./img/fb-mobile.png" class="d-block w-100" height="320px" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/fb-notebook.png" class="d-block w-100" height="320px" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/fb-notebook2.png" class="d-block w-100" height="320px" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/fb-mobile2.png" class="d-block w-100" height="320px" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+    <!-- -- > <button class="btn btn-info  btn-github" href="https://github.com/">
+                Visite meu github!
+             </button> < !-- -->
+    </section>
+
+    </div>
+    <!-- -- >
+    <div class="carousel-item active">
+        <img src="./img/Prancheta 1.jpg" class="d-block w-100" alt="...">
+      </div>
+< !-- -->
 
 </body>
 <script src="./js/script.js"></script>

@@ -17,9 +17,13 @@
        overflow-x: hidden;
    }
 
-   
-   .corpo-portfolio {
+
+   .corpo-portfolio .container-sobre {
        background-color: #5e5e5e;
+       margin-top: 20px;
+       border-top-right-radius: 5px;
+       border-top-left-radius: 5px;
+
    }
 
    /* Header */
@@ -106,6 +110,7 @@
        justify-content: center;
        flex-direction: column;
        animation: LeftAnimation 1.5s ease;
+       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
    }
 
    .container-xxl .intro-portfolio .apresentacao .titulo-principal .tp-2 {
@@ -121,47 +126,43 @@
    .container-xxl .intro-portfolio .imagem-principal {
        width: 55%;
        border-radius: 80px;
-
-
    }
 
-
-
-
    .container-xxl .intro-portfolio .biografia-main {
-    border-left: solid 2px rgba(255, 196, 0, 0.987);
-    border-right: solid 2px rgba(255, 196, 0, 0.987);
-       margin-top: 80px;
+       border-left: solid 2px rgba(255, 196, 0, 0.987);
+       border-right: solid 2px rgba(255, 196, 0, 0.987);
+       margin-top: 50px;
        width: 100%;
        display: flex;
        justify-content: space-between;
        align-items: center;
        padding: 0px;
+       min-height: 500px;
    }
+
    .container-xxl .intro-portfolio .biografia-main .texto-biografia {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    padding: 10px;
-}
+       display: flex;
+       align-items: flex-start;
+       justify-content: start;
+       width: 50%;
+       padding: 10px;
 
-.container-xxl .intro-portfolio .biografia-main .texto-biografia .descricao-titulo {
-    font-size: 16px;
-    text-align: center;
-    font-family: var(--desc);
-    color: rgb(216, 216, 216);
+   }
 
-}
+   .container-xxl .intro-portfolio .biografia-main .texto-biografia .descricao-titulo {
+       font-size: 16px;
+       text-align: center;
+       font-family: var(--desc);
+       color: rgb(216, 216, 216);
+
+   }
 
 
    .container-xxl .intro-portfolio .biografia-main .sobre-mim {
-       
        display: flex;
        justify-content: space-evenly;
        text-align: center;
        font-size: 50px;
-      
        padding: 10px;
        width: 50%;
    }
@@ -169,16 +170,148 @@
    .container-xxl .intro-portfolio .biografia-main .sobre-mim .seta-circular {
        fill: rgba(255, 255, 255, 0.987);
        transform: rotate(-90deg);
-       width: 50px;    
+       width: 50px;
+
    }
 
-   .container-xxl .intro-portfolio .biografia-main .sobre-mim .sobre-mim-title{
-    color: var(--yellow);
+   .container-xxl .intro-portfolio .biografia-main .sobre-mim .sobre-mim-title {
+       color: var(--yellow);
        font-family: var(--title);
-       font-size: 50px;
+       font-size: 60px;
        animation: RightAnimation 1.5s ease;
-      
+       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+
    }
+
+
+   /*  Section - Portfolio */
+
+   .container-xxl .skills-projetos {
+       width: 100%;
+       padding: 30px 0px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+
+   .container-xxl .skills-projetos .section-portfolio-titulo {
+       padding: 20px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       width: 40%;
+   }
+
+
+
+   .container-xxl .skills-projetos .section-portfolio-titulo .confira {
+
+       color: var(--yellow);
+       font-family: var(--title);
+       font-size: 60px;
+       animation: TopAnimation 1.5s ease;
+       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+   }
+
+
+
+   .container-xxl .skills-projetos .section-portfolio-titulo .desc {
+       font-size: 20px;
+       text-align: center;
+       color: rgb(255, 255, 255);
+       font-family: var(--sub-title);
+       letter-spacing: 5px;
+       line-height: 50px;
+
+   }
+
+   /* --- Box de Projetos ---- */
+   .container-portfolio {
+       background: #ffa600;
+       /* fallback for old browsers */
+       background: -webkit-linear-gradient(to top, #F0CB35, #5e5e5e);
+       /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to top, #F0CB35, #5e5e5e);
+       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   }
+
+   .container-xxl .skills-projetos .box-portfolio {
+       width: 100%;
+       display: flex;
+       z-index: 100;
+       min-height: 600px;
+       align-items: flex-start;
+
+   }
+
+   /* --- Facebook template ---- */
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook {
+       display: flex;
+       padding: 10px;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.179);
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook {
+       width: 40%;
+       padding: 20px;
+
+   }
+
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls {
+       width: 100%;
+       filter: drop-shadow(12px);
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
+       width: 100%;
+       border-radius: 5px;
+       box-shadow: 0px 0px 24px rgba(21, 21, 21, 0.659);
+
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook {
+       width: 60%;
+       display: flex;
+       padding: 20px;
+
+       justify-content: center;
+       align-items: flex-start;
+       flex-direction: column;
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
+
+       text-align: center;
+       font-family: var(--sub-title);
+       color: rgb(255, 255, 255);
+       font-size: 40px;
+       font-weight: 500;
+       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
+       font-size: 16px;
+       text-align: center;
+       font-family: var(--desc);
+       color: rgb(225, 225, 225);
+       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+   }
+
+
+   /* --- DS Vendas ---- */
+
+   .container-xxl .skills-projetos .box-portfolio .btn-github {
+       color: white;
+       width: 290px;
+   }
+
+
 
 
 
@@ -200,34 +333,46 @@
 
    /* Animations */
 
-   @keyframes
-    Rotate {
+   @keyframes Rotate {
        100% {
            transform: rotate(360deg);
        }
-     
+
    }
-   
-  @keyframes LeftAnimation {
-    0% {
-        transform:translateX(-1190px);
-    }
-    100%{
-        transform: translate(0px);
-    }
 
- }
- @keyframes RightAnimation {
-    0% {
-        transform:translateX(1190px);
-    }
-    100%{
-        transform: translate(0px);
-    }
+   @keyframes LeftAnimation {
+       0% {
+           transform: translateX(-1190px);
+       }
 
- }  
-    
-   
+       100% {
+           transform: translate(0px);
+       }
+
+   }
+
+   @keyframes RightAnimation {
+       0% {
+           transform: translateX(1190px);
+       }
+
+       100% {
+           transform: translate(0px);
+       }
+
+   }
+
+   @keyframes TopAnimation {
+       0% {
+           transform: translateY(-100px);
+       }
+
+       100% {
+           transform: translate(0px);
+       }
+
+   }
+
 
 
 
@@ -303,7 +448,7 @@
            background-color: transparent;
            width: 60px;
            height: 40px;
-           fill:white;
+           fill: white;
 
        }
 
@@ -364,20 +509,22 @@
            z-index: 20;
 
        }
+
        .container-xxl .intro-portfolio .biografia-main {
            flex-direction: column;
        }
 
-       .container-xxl .intro-portfolio .biografia-main .sobre-mim{
+       .container-xxl .intro-portfolio .biografia-main .sobre-mim {
            flex-direction: column;
            align-items: center;
-           
+
        }
+
        .container-xxl .intro-portfolio .biografia-main .sobre-mim .seta-circular {
-        fill: white;
-        transform: rotate(-0deg);
-        width: 50px;
-        margin-bottom: 30px;
-         
-    }
+           fill: white;
+           transform: rotate(-0deg);
+           width: 50px;
+           margin-bottom: 30px;
+
+       }
    }
