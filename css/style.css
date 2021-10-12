@@ -17,12 +17,17 @@
        overflow-x: hidden;
    }
 
+   .corpo-portfolio {
+       background-color: #5e5e5e;
+
+   }
 
    .corpo-portfolio .container-sobre {
        background-color: #5e5e5e;
        margin-top: 20px;
        border-top-right-radius: 5px;
        border-top-left-radius: 5px;
+       max-width: 1440px;
 
    }
 
@@ -186,12 +191,16 @@
 
    /*  Section - Portfolio */
 
+   .container-portfolio {
+       max-width: 1920px;
+   }
+
    .container-xxl .skills-projetos {
        width: 100%;
        padding: 30px 0px;
        display: flex;
        flex-direction: column;
-       justify-content: space-around;
+       justify-content: center;
        align-items: center;
    }
 
@@ -242,30 +251,36 @@
    .container-xxl .skills-projetos .box-portfolio {
        width: 100%;
        display: flex;
-       z-index: 100;
+       flex-direction: column;
        min-height: 600px;
-       align-items: flex-start;
-
+       justify-content: space-between;
+       align-items: center
    }
 
    /* --- Facebook template ---- */
 
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook {
+       width: 100%;
        display: flex;
-       padding: 10px;
-       border-bottom: 2px solid rgba(0, 0, 0, 0.179);
+       justify-content: space-around;
+       align-items: center;
+       padding: 20px;
+
    }
 
+   /* - Slide Facebook - */
+
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook {
-       width: 40%;
-       padding: 20px;
+       width: 30%;
+       padding: 0px;
+       margin-right: 120px;
 
    }
 
 
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls {
        width: 100%;
-       filter: drop-shadow(12px);
+
    }
 
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
@@ -275,20 +290,34 @@
 
    }
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook {
-       width: 60%;
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
        display: flex;
-       padding: 20px;
+       justify-content: center;
+       align-items: center;
 
+       height: 480px;
+       min-height: 400px;
+   }
+
+   /* - Titulo e descrição - Facebook - */
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook {
+       width: 40%;
+       margin-left: 120px;
+       display: flex;
+       padding: 30px;
        justify-content: center;
        align-items: flex-start;
        flex-direction: column;
    }
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
 
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
+       margin-left: 40px;
+       width: 100%;
        text-align: center;
        font-family: var(--sub-title);
+
        color: rgb(255, 255, 255);
        font-size: 40px;
        font-weight: 500;
@@ -297,19 +326,172 @@
 
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
        font-size: 16px;
-       text-align: center;
+       padding-left: 60px;
+       padding-bottom: 30px;
+       padding-right: 40px;
+       padding-top: 20px;
+       display: flex;
+       text-align: start;
+
        font-family: var(--desc);
        color: rgb(225, 225, 225);
        text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
    }
 
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .line-svg {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-left: 10px;
+       width: 80%;
+       height: 10px;
+
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook {
+       display: flex;
+       margin-bottom: 30px;
+       margin-left: 50px;
+   }
+
 
    /* --- DS Vendas ---- */
 
-   .container-xxl .skills-projetos .box-portfolio .btn-github {
-       color: white;
-       width: 290px;
+   /* - Slide DS Vendas - */
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds {
+       margin-top: 40px;
    }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds {
+       width: 30%;
+       padding: 0px;
+       margin-left: 120px;
+
+   }
+
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds#carouselControlsDs {
+       width: 100%;
+
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner {
+       width: 100%;
+       border-radius: 5px;
+       box-shadow: 0px 0px 24px rgba(21, 21, 21, 0.659);
+
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 480px;
+       min-height: 400px;
+   }
+
+
+   /* - Titulo e descrição - DS Vendas - */
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds {
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 20px;
+
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds {
+       width: 40%;
+       margin-right: 120px;
+       display: flex;
+       padding: 30px;
+       justify-content: center;
+       align-items: flex-start;
+       flex-direction: column;
+   }
+
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .titulo-projeto-ds {
+       width: 100%;
+       text-align: center;
+       font-family: var(--sub-title);
+       text-align: start;
+       margin-left: 60px;
+       color: rgb(255, 255, 255);
+       font-size: 40px;
+       font-weight: 500;
+       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .desc-projeto-ds {
+       font-size: 16px;
+       padding-left: 60px;
+       padding-bottom: 30px;
+       padding-right: 40px;
+       padding-top: 20px;
+       display: flex;
+       text-align: start;
+       font-family: var(--desc);
+       color: rgb(225, 225, 225);
+       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .line-svg {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-left: 10px;
+       width: 80%;
+       height: 10px;
+
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds {
+       display: flex;
+       margin-bottom: 30px;
+       margin-left: 50px;
+   }
+
+   .container-xxl .skills-projetos .box-portfolio .links-projetos {
+       text-decoration: none;
+   }
+
+
+   .btn-grad {
+       background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+   }
+
+   .btn-grad {
+       margin: 10px;
+       padding: 15px 45px;
+       display: flex;
+       font-family: var(--sub-title);
+
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 100% auto;
+       color: white;
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+       display: block;
+   }
+
+   .btn-grad:hover {
+       background-position: right center;
+       /* change the direction of the change here */
+       color: rgb(255, 183, 1);
+       text-decoration: none;
+   }
+
+
+
+
+
+
+
 
 
 
@@ -353,7 +535,7 @@
 
    @keyframes RightAnimation {
        0% {
-           transform: translateX(1190px);
+           transform: translateX(100px);
        }
 
        100% {
