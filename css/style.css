@@ -18,12 +18,15 @@
    }
 
    .corpo-portfolio {
-       background-color: #5e5e5e;
+       user-select: text;
+       background: #5e5e5e;
+       background: rgb(94,94,94);
+background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rgb(167, 167, 167)  100%);
 
    }
 
    .corpo-portfolio .container-sobre {
-       background-color: #5e5e5e;
+      
        margin-top: 20px;
        border-top-right-radius: 5px;
        border-top-left-radius: 5px;
@@ -115,7 +118,7 @@
        justify-content: center;
        flex-direction: column;
        text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
-       -webkit-animation: LeftAnimation 1.5s ease;
+      animation: LeftAnimation 1.5s ease;
        
    }
 
@@ -162,7 +165,7 @@
        width: 100%;
        text-align: center;
        font-family: var(--desc);
-       color: rgb(216, 216, 216);
+       color: rgb(255, 255, 255);
 
    }
 
@@ -245,13 +248,7 @@
 
    /* --- Box de Projetos ---- */
 
-   .container-portfolio {
-       background: #ffa600;
-       background: -webkit-linear-gradient(to top, #ffcc00, #5e5e5e);
-       background: linear-gradient(to top, #fdcc05, #5e5e5e);
-     
-
-   }
+   
 
    .container-xxl .skills-projetos .box-portfolio {
        width: 100%;
@@ -271,7 +268,7 @@
        justify-content: space-around;
        align-items: center;
        padding: 20px;
-       margin-bottom: 80px;
+       margin-bottom: 50px;
 
    }
 
@@ -281,22 +278,19 @@
        width: 30%;
        min-width: 340px;
        padding: 0px;
-
-
    }
 
 
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
        border-radius: 5px;
        box-shadow: 0px 0px 24px rgba(21, 21, 21, 0.659);
-
    }
 
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
        display: flex;
        justify-content: center;
        align-items: center;
-
+       width: 100%;
        height: 480px;
        min-height: 400px;
    }
@@ -348,8 +342,7 @@
        display: flex;
        margin-top: 20px;
        margin-bottom: 30px;
-       
-   }
+          }
    /* --- DS Vendas ---- */
 
 
@@ -369,7 +362,6 @@
 
    .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds#carouselControlsDs {
        width: 100%;
-
    }
 
    .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner {
@@ -431,7 +423,7 @@
        display: flex;
        text-align: start;
        font-family: var(--desc);
-       color: rgb(225, 225, 225);
+       color: rgb(255, 255, 255);
        text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
    }
 
@@ -442,7 +434,6 @@
        margin-left: 60px;
        width: 80%;
        height: 10px;
-
    }
 
    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds {
@@ -465,7 +456,6 @@
        padding: 15px 45px;
        display: flex;
        font-family: var(--sub-title);
-
        text-transform: uppercase;
        transition: 0.5s;
        background-size: 100% auto;
@@ -549,10 +539,9 @@
    .container-xxl .skills-projetos .box-portfolio .box-github .line-svg {
        width: 80%;
        height: 10px;
-
    }
 
-
+  
 
 
 
@@ -817,7 +806,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   } 
   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook {
     display: flex; 
@@ -865,7 +854,6 @@ margin-top: 40px;
 .botoes-facebook .links-projetos .btn-grad{
  padding: 16px 5px;
  font-size: 14px;
-
  
      }
      
@@ -909,7 +897,7 @@ margin-top: 40px;
  .container-xxl .skills-projetos .box-portfolio .projeto-ds
   .textos-projeto-ds .desc-projeto-ds {
      padding: 10px;
-     margin: 0px;
+     margin: 14px;
      width: 100%;
  }
  .container-xxl .skills-projetos .box-portfolio
@@ -929,4 +917,35 @@ margin: 0px;
 
  
      }
+
+      /* Meu-Github */ 
+
+      .container-xxl .skills-projetos .box-portfolio .box-github {
+          width: 100%;
+         flex-direction: column-reverse;
+         margin-top: 20px;
+      }
+      .container-xxl .skills-projetos .box-portfolio .box-github .img-projetos{
+        width: 100%;
+      }
+      .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-xxl .skills-projetos .box-portfolio .box-github
+     .box-textos-git .titulo-git{
+         margin: 5px 0px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 30px;
+    
+    }
+    .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git .desc-git {
+        padding: 10px;
+    }
+
+      
+
     }   
