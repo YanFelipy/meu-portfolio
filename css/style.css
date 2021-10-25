@@ -15,129 +15,185 @@
        padding: 0px;
        margin: 0px;
        overflow-x: hidden;
-   }
+    }
+    
+    .corpo-portfolio {
+        user-select: text;
+        background: #5e5e5e;
+        background: rgb(94,94,94);
+        background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rgb(167, 167, 167)  100%);
+        
+    }
+    
+    .corpo-portfolio .container-sobre {
+        
+        margin-top: 20px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        max-width: 1440px;
+        
+    }
+    
+    /* Header */
+    
+    .corpo-portfolio .header {
+        position: fixed;
+        top: 0px;
+        z-index: 9000;
+        width: 100%;
+        display: flex;
+        height: 70px;
+        background-color: rgb(68, 68, 68);
+        padding: 1rem;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.487);
+    }
+    
+    .corpo-portfolio .header #logo-img {
+        width: 50px;
+        border-radius: 30px;
+    }
+    
+    .corpo-portfolio .header #logo-img:hover {
+        animation: Rotate 0.9s ease;
+    }
+    
+    .corpo-portfolio .header .navegacao .menu {
+        display: flex;
+        list-style: none;
+        gap: .5rem;
+    }
+    
+    .corpo-portfolio .header .navegacao .menu a {
+        display: block;
+        padding: .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: var(--desc);
+        color: white;
+        cursor: pointer;
+    }
+    
+    .corpo-portfolio .header .navegacao .menu a:hover {
+        color: var(--yellow);
+    }
+    
+    .corpo-portfolio .header .navegacao #btn-mobile {
+        display: none;
+    }
+    
+    .corpo-portfolio .header .navegacao .menu .button-up {
+        display: none;
+    }
+    
+    
+    /*  Main */
+    
+    .container-xxl .intro-portfolio {
+        width: 100%;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
 
-   .corpo-portfolio {
-       user-select: text;
-       background: #5e5e5e;
-       background: rgb(94,94,94);
-background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rgb(167, 167, 167)  100%);
+        
+    }
+    
+    .container-xxl .intro-portfolio .apresentacao {
+        margin: 80px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    
+    .container-xxl .intro-portfolio .apresentacao .titulo-principal {
+        text-align: center;
+        color: var(--yellow);
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 70px;
+        letter-spacing: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+        animation: LeftAnimation 1.5s ease;
+        
+    }
+    
+    
+    .container-xxl .intro-portfolio .apresentacao .titulo-principal .tp-2 {
+        font-size: 20px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: var(--sub-title);
+        letter-spacing: 10px;
+        line-height: 50px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: start;
+        right: -115px;
+       
+        bottom: 45px;
+        width: 20%;
+       
+    }
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs  .navegacao-social .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        margin: 30px;
+        
+    }
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu a {
+        text-decoration: none;
+    
+    }
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs 
+    .navegacao-social .menu .menu-social .svg-menu{
+        width: 35px;
+        fill: black;
+        height: 35px;
+        margin: 5px;
+       
+        
+    }
 
-   }
-
-   .corpo-portfolio .container-sobre {
-      
-       margin-top: 20px;
-       border-top-right-radius: 5px;
-       border-top-left-radius: 5px;
-       max-width: 1440px;
-
-   }
-
-   /* Header */
-
-   .corpo-portfolio .header {
-       display: flex;
-       height: 70px;
-       background-color: rgb(68, 68, 68);
-       padding: 1rem;
-       box-sizing: border-box;
-       align-items: center;
-       justify-content: space-around;
-       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.487);
-   }
-
-   .corpo-portfolio .header #logo-img {
-       width: 50px;
-       border-radius: 30px;
-   }
-
-   .corpo-portfolio .header #logo-img:hover {
-       animation: Rotate 0.9s ease;
-   }
-
-   .corpo-portfolio .header .navegacao .menu {
-       display: flex;
-       list-style: none;
-       gap: .5rem;
-   }
-
-   .corpo-portfolio .header .navegacao .menu a {
-       display: block;
-       padding: .5rem;
-       text-decoration: none;
-       font-size: 18px;
-       font-family: var(--desc);
-       color: white;
-       cursor: pointer;
-   }
-
-   .corpo-portfolio .header .navegacao .menu a:hover {
-       color: var(--yellow);
-   }
-
-   .corpo-portfolio .header .navegacao #btn-mobile {
-       display: none;
-   }
-
-   .corpo-portfolio .header .navegacao .menu .button-up {
-       display: none;
-   }
-
-
-   /*  Main */
-
-   .container-xxl .intro-portfolio {
-       width: 100%;
-       padding: 30px 0px;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-around;
-       align-items: center;
-
-
-   }
-
-   .container-xxl .intro-portfolio .apresentacao {
-       margin: 20px 0px;
-       width: 100%;
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-
-   }
-
-
-   .container-xxl .intro-portfolio .apresentacao .titulo-principal {
-       text-align: center;
-       color: var(--yellow);
-       font-family: 'Rubik Mono One', sans-serif;
-       font-size: 70px;
-       letter-spacing: 0px;
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs {
+       width: 40%;
        display: flex;
        justify-content: center;
-       flex-direction: column;
-       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
-      animation: LeftAnimation 1.5s ease;
-       
+       align-items: center;
    }
 
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs  .svg-apr{
+    width: 400px;
+    fill: var(--yellow);
    
-   .container-xxl .intro-portfolio .apresentacao .titulo-principal .tp-2 {
-       font-size: 20px;
-       text-align: center;
-       color: rgb(255, 255, 255);
-       font-family: var(--sub-title);
-       letter-spacing: 10px;
-       line-height: 50px;
-       margin-bottom: 40px;
-       
-   }
-
-   .container-xxl .intro-portfolio .imagem-principal {
-       width: 55%;
-       border-radius: 80px;
-   }
+ 
+    
+      
+  }
+  .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .img-apr{
+    width:170px;
+  
+    
+    
+      
+  }
+   
 
    .container-xxl .intro-portfolio .biografia-main {
        border-left: solid 2px rgba(255, 196, 0, 0.987);
@@ -148,7 +204,7 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        justify-content: space-between;
        align-items: center;
        padding: 0px;
-       min-height: 500px;
+     
    }
 
    .container-xxl .intro-portfolio .biografia-main .texto-biografia {
@@ -292,7 +348,7 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        align-items: center;
        width: 100%;
        height: 480px;
-       min-height: 400px;
+     
    }
 
    /* - Titulo e descrição - Facebook - */
@@ -376,7 +432,7 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        justify-content: center;
        align-items: center;
        height: 480px;
-       min-height: 400px;
+       
    }
 
 
@@ -477,8 +533,10 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
 
 
    .container-xxl .skills-projetos .box-portfolio .box-github {
+       background-color: rgb(255, 255, 255);
        margin: 80px 0px;
-       width: 80%;
+       width: 100vw;
+       
        display: flex;
        justify-content: space-around;
        align-items: center;
@@ -492,10 +550,15 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        align-items: center;
    }
 
-   .container-xxl .skills-projetos .box-portfolio .box-github .img-projetos .prancheta {
-       width: 100%;
-       border-radius: 30px;
-       filter: saturate(130%);
+   .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos {
+       width: 50%;
+   }
+   .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .svg-projetos  {
+      width: 680px;
+      fill: var(--yellow);
+   }
+   .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .img-projetos {
+  width: 120px;
    }
 
    .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git {
@@ -509,10 +572,10 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        font-family: var(--sub-title);
        text-align: start;
        margin-left: 60px;
-       color: rgb(255, 255, 255);
+       color: var(--yellow);
        font-size: 40px;
        font-weight: 500;
-       text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
+       text-shadow: 0px 1px 5px rgba(46, 46, 46, 0.652);
    }
 
 
@@ -525,12 +588,13 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        display: flex;
        text-align: start;
        font-family: var(--desc);
-       color: rgb(225, 225, 225);
+       color: black;
        text-shadow: 0px 1px 10px rgba(46, 46, 46, 0.652);
    }
 
    .container-xxl .skills-projetos .box-portfolio .box-github .botoes-git {
        display: flex;
+      
        margin-top: 20px;
        margin-bottom: 30px;
        margin-left: 50px;
@@ -735,14 +799,17 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        /* Main */
 
        .container-xxl .intro-portfolio .apresentacao {
-           margin: 20px 0px;
+           margin: 70px 0px;
+           margin-bottom: 10px;
            width: 100%;
-           flex-direction: column;
+           flex-direction: column-reverse;
 
        }
 
        .container-xxl .intro-portfolio .apresentacao .texto-main {
+           margin-top: 50px;
            display: flex;
+           flex-direction: column-reverse;
            justify-content: center;
            align-items: center;
            z-index: 0;
@@ -751,34 +818,51 @@ background: linear-gradient(90deg, rgba(167, 167, 167, 0.987) 5%, #575757 50%,rg
        .container-xxl .intro-portfolio .apresentacao .titulo-principal {
     font-size: 60px;   
    
+    }.container-xxl .intro-portfolio .apresentacao .apresentacao-imgs {
+        width: 100%;
+    }
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
+        width: 50%;
     }
 
-       .container-xxl .intro-portfolio .imagem-principal {
-           width: 100%;
-           border-radius: 80px;
-           z-index: 20;
-
-       }
-
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social {
+        display: flex;
+        position: absolute;
+        left: 5px;
+        top: -360px;
+        align-items: center;
+        
+        width: 30%;
+       
+    }
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu .menu-social .svg-menu {
+     fill: rgb(19, 19, 19);
+     width: 25px;
+     height: 25px;
+    
+   
+    }
        .container-xxl .intro-portfolio .biografia-main {
-           flex-direction: column;
+           flex-direction: column-reverse;
+          
        }
 
        .container-xxl .intro-portfolio .biografia-main .sobre-mim {
-           flex-direction: column;
+           flex-direction: column-reverse;
            align-items: center;
 
        }
 
        .container-xxl .intro-portfolio .biografia-main .texto-biografia {
+           margin-top: 00px;
            width: 90%;
        }
 
        .container-xxl .intro-portfolio .biografia-main .sobre-mim .seta-circular {
            fill: white;
-           transform: rotate(-0deg);
+           transform: rotate(-180deg);
            width: 40px;
-           margin-bottom: 30px;
+           margin: 30px;
 
        }
 
@@ -921,14 +1005,34 @@ margin: 0px;
       /* Meu-Github */ 
 
       .container-xxl .skills-projetos .box-portfolio .box-github {
-          width: 100%;
+          width: 100vw;
          flex-direction: column-reverse;
          margin-top: 20px;
       }
-      .container-xxl .skills-projetos .box-portfolio .box-github .img-projetos{
-        width: 100%;
-      }
+      .container-xxl .skills-projetos .box-portfolio .box-github .img-projetos {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    margin-bottom: 5px;
+    }
+    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .svg-projetos  {
+     
+       width: 320px;
+      
+    }
+    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .img-projetos {
+   width: 120px;
+    }
       .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git{
+        
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -946,6 +1050,14 @@ margin: 0px;
         padding: 10px;
     }
 
-      
+    .container-xxl .skills-projetos .box-portfolio .box-github .botoes-git {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+       
 
     }   
+   }
