@@ -211,7 +211,8 @@
        width: 50%;
        padding: 10px;
        border: none;
-       background-color: rgba(0, 0, 0, 0.487);
+       background-color: rgb(247, 247, 247);
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.79);
        border-radius: 5px;
        margin: 10px;
        
@@ -252,24 +253,39 @@
     
     .container-xxl .habilidades-e-carreira{
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
+        margin: 30px;
     }
     
-    /* Frontend */
+    /* Tecnologias */
+
     .container-xxl .habilidades .tecnologias {
         
         display: flex;
         flex-direction: column;
- 
+        
     }
+    .container-xxl .habilidades .tecnologias .tech{
+        margin-top: 10px;
+        
+    }
+    .container-xxl .habilidades .tecnologias .svg-tech{
+        margin: 5px;
+        width: 30px;
+    }
+    /* Frontend */
+
     .container-xxl .habilidades .habilidades-front {
         
-        width: 50%;
+        width: 100%;
        display: flex;
        justify-content: center;
        flex-direction: column;
        align-items: center;
        padding: 10px;
+       border-bottom: solid 1px rgb(132, 132, 132);
 
    }
 
@@ -297,7 +313,8 @@
 
    .container-xxl .habilidades .front-hab-textos .titulo-front {
        font-family: var(--sub-title);
-       color: white;
+       font-weight: bold;
+       color: rgb(41, 41, 41);
    }
 
    .container-xxl .habilidades .front-hab-textos .desc-front {
@@ -321,7 +338,7 @@
    /* Backend */
 
    .container-xxl .habilidades .habilidades-back {
-       width: 50%;
+       width: 100%;
        display: flex;
        justify-content: center;
        flex-direction: column;
@@ -339,7 +356,7 @@
 
    .container-xxl .habilidades .back-hab-textos .titulo-back {
        font-family: var(--sub-title);
-       color: white;
+       color: rgb(0, 0, 0);
    }
 
    .container-xxl .habilidades .habilidades-back .tecnologias {
@@ -366,7 +383,8 @@
         width: 50%;
         padding: 10px;
         border: none;
-        background-color: rgba(255, 255, 255, 0.487);
+        background-color: rgb(247, 247, 247);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.79);
         border-radius: 5px;
         margin: 10px;
       }
@@ -549,6 +567,7 @@
        justify-content: center;
        align-items: center;
        width: 100%;
+       min-width: 320px;
        height: 480px;
 
    }
@@ -614,6 +633,7 @@
        padding: 0px;
        margin-left: 120px;
 
+       min-width: 320px;
 
    }
 
@@ -626,13 +646,13 @@
        width: 100%;
        border-radius: 5px;
        box-shadow: 0px 0px 24px rgba(21, 21, 21, 0.659);
-
    }
 
    .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
        display: flex;
        justify-content: center;
        align-items: center;
+       min-width: 320px;
        height: 480px;
 
    }
@@ -1063,60 +1083,90 @@
 
        }
 
-       /* Habilidades */
-
-       .container-xxl .habilidades .habilidades-header {
-           width: 100%;
-           padding: 5px;
-       }
-
-       .container-xxl .habilidades .habilidades-header .titulo-header-hab {
-           font-size: 40px;
-       }
-
-
+       
+       
+       /*  Bio */
+       
        .container-xxl .intro-portfolio .biografia-main {
            flex-direction: column-reverse;
-
-       }
-
-       .container-xxl .intro-portfolio .biografia-main .sobre-mim {
+           
+        }
+        
+        .container-xxl .intro-portfolio .biografia-main .sobre-mim {
            flex-direction: column-reverse;
            align-items: center;
+           
+        }
 
-       }
-
-       .container-xxl .intro-portfolio .biografia-main .texto-biografia {
+        .container-xxl .intro-portfolio .biografia-main .texto-biografia {
            margin-top: 00px;
            width: 90%;
-       }
+        }
 
-       .container-xxl .intro-portfolio .biografia-main .sobre-mim .seta-circular {
+        .container-xxl .intro-portfolio .biografia-main .sobre-mim .seta-circular {
            fill: white;
            transform: rotate(-180deg);
            width: 40px;
            margin: 30px;
-
-       }
-
-       .container-xxl .intro-portfolio .biografia-main .sobre-mim .sobre-mim-title {
+           
+        }
+        
+        .container-xxl .intro-portfolio .biografia-main .sobre-mim .sobre-mim-title {
            font-size: 40px;
-       }
+        }
+        
+        .container-xxl .skills-projetos .section-portfolio-titulo {
+            width: 100%;
+            
+        }
+        
+        .container-xxl .skills-projetos .section-portfolio-titulo .confira {
+            font-size: 40px;
+        }
+        
+        .container-xxl .skills-projetos .section-portfolio-titulo .desc p {
+            margin-bottom: 20px;
+            
+        }
+           
+        /*  Habilidades e Carreira */
 
-       .container-xxl .skills-projetos .section-portfolio-titulo {
-           width: 100%;
+        .container-xxl .habilidades-e-carreira {
+            flex-direction: column;
+        }
 
-       }
+        /* Habilidades */
+        .container-xxl .habilidades {
+            width: 100%;
+            align-items: center;
+        }
 
-       .container-xxl .skills-projetos .section-portfolio-titulo .confira {
-           font-size: 40px;
-       }
+        .container-xxl .habilidades .habilidades-header {
+            width: 100%;
+            padding: 5px;
+        }
+ 
+        .container-xxl .habilidades .habilidades-header .titulo-header-hab {
+            font-size: 40px;
+        }
+        
+        /*  Front */
+        .container-xxl .habilidades .habilidades-front{
+          width: 100%;
+          padding: 10px;
+        }
+        /*  Back */
+        .container-xxl .habilidades .habilidades-back{
+            width: 100%;
+            padding: 10px;
+          }
 
-       .container-xxl .skills-projetos .section-portfolio-titulo .desc p {
-           margin-bottom: 20px;
-
-       }
-
+        /* Carreira */ 
+          
+        .container-xxl .carreira {
+            width: 100%;
+        }
+     
        /* Portfolio */
 
        /* Facebook */
