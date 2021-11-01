@@ -9,13 +9,13 @@
        /* Colors */
        --sub-grey: color: #a7a7a7;
        --yellow: rgba(255, 196, 0, 0.987);
-    }
-    
-    *{
-        -webkit-font-smoothing: antialiased;
-        webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-    }
+   }
+
+   * {
+       -webkit-font-smoothing: antialiased;
+       webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+       text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+   }
 
    a {
        text-decoration: none;
@@ -27,24 +27,24 @@
        margin: 0px;
        overflow-x: hidden;
    }
-   
+
    .corpo-portfolio {
        user-select: text;
        background: rgb(252, 252, 252);
-       background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgb(202, 202, 202) 88%);
-       
-    }
-    
-    .corpo-portfolio .container-sobre {
-        margin-top: 20px;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-    }
-    
-    /* Header */
-    
-    .corpo-portfolio .header {
-        
+       background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgb(255, 255, 255) 88%);
+
+   }
+
+   .corpo-portfolio .container-sobre {
+       margin-top: 20px;
+       border-top-right-radius: 5px;
+       border-top-left-radius: 5px;
+   }
+
+   /* Header */
+
+   .corpo-portfolio .header {
+
        top: 0px;
        z-index: 9000;
        width: 100%;
@@ -130,6 +130,7 @@
        display: flex;
        flex-direction: column;
        align-items: center;
+       
    }
 
    .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr {
@@ -149,19 +150,26 @@
        margin-top: 20px;
        display: flex;
        align-items: center;
+       justify-content: space-evenly;
        padding: 10px;
+       animation: BottomAnimation 2s ease;
+       
+       
    }
 
    .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr a {
        color: #eee;
        font-family: var(--body-font);
        font-size: 18px;
+       margin-top: 2px;
+       
+       
    }
 
    .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr .svg-menu {
        fill: white;
        width: 20px;
-       margin-left: 10px;
+       
    }
 
 
@@ -172,7 +180,7 @@
        flex-direction: column;
        box-sizing: border-box;
        align-items: flex-start;
-
+    
    }
 
 
@@ -187,10 +195,10 @@
        display: flex;
        justify-content: center;
        flex-direction: column;
-       animation: bottomAnimation 1.5s ease;
        line-height: 1;
        -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+       animation: TopAnimation 2s ease;
    }
 
    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .titulo-principal .yf {
@@ -198,7 +206,7 @@
        /* fallback for old browsers */
        background: -webkit-linear-gradient(to right, #ffd06c, #f8b500);
        /* Chrome 10-25, Safari 5.1-6 */
-       background: linear-gradient(to right, #ffde8b, #f8b500);
+       background: linear-gradient(to bottom, #fadf9b, #f8b500);
        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
@@ -215,254 +223,268 @@
        margin-bottom: 10px;
        webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-       
+       animation: LeftAnimation 2s ease;
    }
-   
+
    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .desc-titulo {
        font-family: var(--body-font);
        color: #a7a7a7;
        font-size: 16px;
        font-weight: 400;
-    }
-    
-   .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll{
+       animation: LeftAnimation 2s ease;
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll {
        display: flex;
        align-items: center;
        justify-content: center;
-       margin: 30px 0px;
-       gap: 3px;
+       margin-top: 120px;
+       gap: 3 px;
+       animation: BottomAnimation 2s ease;
+
    }
+
    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll .mouse-svg {
        width: 20px;
-    fill: var(--yellow);
-}
-.container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll p{
-    margin: 0px;
-    font-family: var(--body-font);
-    font-weight: 500;
-    color: #a7a7a7;
-    font-size: 16px;
-}
-.container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll .arrow-down {
-    width: 20px;
-    fill: var(--yellow);
-}
+       fill: var(--yellow);
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll p {
+       margin: 0px;
+       font-family: var(--body-font);
+       font-weight: 500;
+       color: #a7a7a7;
+       font-size: 16px;
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll .arrow-down {
+       width: 20px;
+       fill: var(--yellow);
+   }
 
 
-.container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: start;
-    right: -115px;
-    bottom: 45px;
-    width: 100px;
-    
-}
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social {
+       display: flex;
+       position: relative;
+       align-items: center;
+       justify-content: start;
+       right: -135px;
+       bottom: 65px;
+       width: 110px;
 
-.container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style: none;
-    margin: 30px;
-    width: 80px;
-    
-    
-}
+   }
 
-.container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu a {
-    text-decoration: none;
-    
-}
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       list-style: none;
+       margin: 30px;
+       width: 90px;
+       z-index: 4;
 
-.container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu .menu-social .svg-menu {
-    width: 80%;
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu a {
+       text-decoration: none;
+       
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu .menu-social .svg-menu {
+       width: 80%;
        min-width: 20px;
        fill: black;
        height: 35%;
        margin-bottom: 5px;
-       
-       
-       
-    }
-    
-    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs {
-        width: 580px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
-        width: 480px;
-        fill: var(--yellow);
+      
 
-    }
-    
-    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .img-apr {
-        width: 160px;
-        animation: Rotate 5s ease;
-    }
-    
-       /* ------ Sobre-Mim -------- */
 
-       .container-xxl  .biografia {
-          height: 90vh;
-          margin-bottom: 40px;
-    }
-    .container-xxl  .biografia .box-bio {
-          display: flex;
-          justify-content: center;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .container-xxl  .biografia .textos-section-bio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
-        
-    }
-    .container-xxl  .biografia .textos-section-bio .sobre-mim-title-section {
-        color: #2b2929;
-        font-family: var(--body-font);
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 1;
-        animation: RightAnimation 1.5s ease;
-        text-align: center;
-        
-        
-    }
-    .container-xxl .biografia .textos-section-bio .sobre-mim-desc-section {
-        width: 100%;
-        color: var(--sub-grey);
-        font-family: var(--body-font);
-        font-size: 17px;
-        animation: RightAnimation 1.5s ease;
-        text-align: center;
-        
-    }
-    
-    .container-xxl .biografia .icon-sobre-mim .sobre-img {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .container-xxl .biografia .icon-sobre-mim .sobre-img .img-apr { 
-        width: 480px;
-        border-radius: 10px;
-    }
-    .container-xxl .textos-biografia {
-        margin-top: 50px;
-        width: 700px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        padding: 0px;
-    }
-        
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs {
+       width: 580px;
+       display: flex;
+       justify-content :center;
+       align-items: center;
+       animation: RightAnimation 2s ease;
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
+       width: 480px;
+       fill: var(--yellow);
+       z-index: 2;
+
+   }
+
+   .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .img-apr {
+       width: 160px;
+       animation: Rotate 2s ease;
+   }
+
+   /* ------ Sobre-Mim -------- */
+
+   .container-xxl .biografia {
+       height: 90vh;
+       margin-bottom: 40px;
+   }
+
+   .container-xxl .biografia .box-bio {
+       display: flex;
+       justify-content: center;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+
+   .container-xxl .biografia .textos-section-bio {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 100px;
+
+   }
+
+   .container-xxl .biografia .textos-section-bio .sobre-mim-title-section {
+       color: #2b2929;
+       font-family: var(--body-font);
+       font-size: 50px;
+       font-weight: 600;
+       line-height: 4px;
+       animation: RightAnimation 1.5s ease;
+       text-align: center;
+
+
+   }
+
+   .container-xxl .biografia .textos-section-bio .sobre-mim-desc-section {
+       width: 100%;
+       color: rgb(194, 194, 194);
+       font-family: var(--body-font);
+       font-size: 17px;
+       animation: RightAnimation 1.5s ease;
+       text-align: center;
+
+   }
+
+   .container-xxl .biografia .icon-sobre-mim .sobre-img {
+       display: flex;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .container-xxl .biografia .icon-sobre-mim .sobre-img .img-apr {
+       width: 480px;
+       border-radius: 10px;
+   }
+
+   .container-xxl .textos-biografia {
+       margin-top: 50px;
+       width: 700px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-direction: column;
+       padding: 0px;
+   }
+
+
+   .container-xxl .biografia .texto-bio {
+       display: flex;
+       align-items: flex-start;
+       justify-content: start;
+       width: 50%;
+       padding: 10px;
+
+   }
+
+   .container-xxl .biografia .textos-biografia .texto-bio .descricao-titulo {
+       font-size: 16px;
+       text-align: center;
+       font-family: var(--body-font);
+       color: var(--sub-grey);
+
+   }
+
+   .container-xxl .biografia .textos-biografia .perfil-class {
+       display: flex;
+       gap: 10px;
+
+   }
+
+   .container-xxl .biografia .textos-biografia .perfil-class div {
+       font-family: var(--body-font);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 20px 5px;
+
+   }
+
+   .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-titulo {
+       font-weight: 600;
+       font-size: 30px;
+   }
+
+   .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-nome {}
+
+
+   .container-xxl .biografia .textos-biografia .bt-apr {
+       font-size: 12px;
+       font-family: Arial;
+       width: 210px;
+       height: 80px;
+       border-width: 1px;
+       background: var(--yellow);
+       color: #eee;
+       border: none;
+       font-weight: bold;
+       border-top-left-radius: 6px;
+       border-top-right-radius: 6px;
+       border-bottom-left-radius: 6px;
+       border-bottom-right-radius: 6px;
+       margin-top: 20px;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       padding: 10px;
+   }
+
+   .container-xxl .biografia .textos-biografia .bt-apr a {
+       color: #eee;
+       font-family: var(--body-font);
+       font-size: 18px;
+   }
+
+   .container-xxl .biografia .textos-biografia .bt-apr .svg-download {
+       fill: white;
+       width: 20px;
        
-       .container-xxl  .biografia  .texto-bio {
-           display: flex;
-           align-items: flex-start;
-           justify-content: start;
-           width: 50%;
-           padding: 10px;
-    
-       }
-    
-       .container-xxl .biografia .textos-biografia .texto-bio .descricao-titulo {
-           font-size: 16px;
-           text-align: center;
-           font-family: var(--body-font);
-           color: var(--sub-grey);
-    
-       }
-       .container-xxl .biografia .textos-biografia .perfil-class {
-           display: flex;
-           gap: 10px;
-           
-       }
-       .container-xxl .biografia .textos-biografia .perfil-class div{
-        font-family: var(--body-font);
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 20px 5px;
+   }
 
-       }
 
-       .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-titulo{
-           font-weight: 600;
-           font-size: 30px;
-    }
-       .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-nome {
+   /* ------ Habilidades -------- */
 
-       }
-    
-    
-       .container-xxl  .biografia .textos-biografia .bt-apr {
-        font-size: 12px;
-        font-family: Arial;
-        width: 210px;
-        height: 60px;
-        border-width: 1px;
-        background: var(--yellow);
-        color: #eee;
-        border: none;
-        font-weight: bold;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 10px;
-    }
- 
-    .container-xxl  .biografia .textos-biografia .bt-apr a {
-        color: #eee;
-        font-family: var(--body-font);
-        font-size: 18px;
-    }
- 
-    .container-xxl .biografia .textos-biografia .bt-apr .svg-download {
-        fill: white;
-        width: 20px;
-        margin-left: 10px;
-    }
-    
-    
-    /* ------ Habilidades -------- */
-    
-    .container-habilidades {
-       
-        filter: drop-shadow(2225px);
+   .container-habilidades {
+
+       filter: drop-shadow(2225px);
        border-radius: 8px;
        border: none;
        margin-bottom: 80px;
-    }
-    
-    .container-xxl .habilidades {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding: 10px;
-        border: none;
-        background-color: rgb(247, 247, 247);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.79);
-        border-radius: 5px;
-        margin: 10px;
-        
-    }
+   }
+
+   .container-xxl .habilidades {
+       display: flex;
+       flex-direction: column;
+       width: 50%;
+       padding: 10px;
+       border: none;
+       background-color: rgb(247, 247, 247);
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.79);
+       border-radius: 5px;
+       margin: 10px;
+
+   }
 
 
    .container-xxl .habilidades-header {
@@ -470,15 +492,15 @@ margin: 20px 5px;
        flex-direction: column;
        align-items: center;
        justify-content: center;
-       
-       
-    }
-    
+
+
+   }
+
    .container-xxl .habilidades-header .svg-hab-header {
        width: 60px;
        fill: white;
    }
-   
+
    .container-xxl .habilidades-header .titulo-header-hab {
        font-family: var(--title);
        text-align: center;
@@ -486,49 +508,49 @@ margin: 20px 5px;
        text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.487);
        margin-top: 20px;
        font-size: 50px;
-    }
-    
-    .container-xxl .habilidades-header .desc-habilidades {
+   }
+
+   .container-xxl .habilidades-header .desc-habilidades {
        color: rgb(164, 164, 164);
        font-family: var(--sub-title);
        text-transform: uppercase;
        letter-spacing: 5px;
        margin-bottom: 20px;
-    }
-    
-    
-    .container-xxl .habilidades-e-carreira {
+   }
+
+
+   .container-xxl .habilidades-e-carreira {
        display: flex;
        justify-content: center;
        align-items: center;
        padding: 10px;
        margin: 30px;
-    }
+   }
 
-    /* Tecnologias */
-    
-    .container-xxl .habilidades .tecnologias {
-        
-        display: flex;
-        flex-direction: column;
-        
-    }
-    
-    .container-xxl .habilidades .tecnologias .tech {
-        margin-top: 10px;
-        
-    }
-    
-    .container-xxl .habilidades .tecnologias .svg-tech {
-        margin: 5px;
+   /* Tecnologias */
+
+   .container-xxl .habilidades .tecnologias {
+
+       display: flex;
+       flex-direction: column;
+
+   }
+
+   .container-xxl .habilidades .tecnologias .tech {
+       margin-top: 10px;
+
+   }
+
+   .container-xxl .habilidades .tecnologias .svg-tech {
+       margin: 5px;
        width: 30px;
-    }
-    
-    /* Frontend */
-    
-    .container-xxl .habilidades .habilidades-front {
-        
-        width: 100%;
+   }
+
+   /* Frontend */
+
+   .container-xxl .habilidades .habilidades-front {
+
+       width: 100%;
        display: flex;
        justify-content: center;
        flex-direction: column;
@@ -557,7 +579,7 @@ margin: 20px 5px;
        display: flex;
        flex-direction: column;
        width: 100%;
-       
+
    }
 
    .container-xxl .habilidades .front-hab-textos .titulo-front {
@@ -727,34 +749,54 @@ margin: 20px 5px;
        padding: 20px;
 
    }
+   .container-xxl .skills-projetos .box-portfolio 
+    .swiper {
+        width: 1200px;
+        box-sizing: border-box;
+      }
+   
 
    /* --- Facebook template ---- */
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook {
+   .container-xxl .skills-projetos .box-portfolio .swiper
+    .swiper-wrapper .swiper-slide .projeto-facebook {
        width: 100%;
        display: flex;
+       flex-direction: column-reverse;
        justify-content: space-around;
        align-items: center;
        padding: 20px;
        margin-bottom: 50px;
 
    }
+   .container-xxl .skills-projetos .box-portfolio .swiper 
+   .swiper-wrapper .swiper-slide {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
 
    /* - Slide Facebook - */
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook {
-       width: 30%;
+   .container-xxl .skills-projetos .box-portfolio .swiper
+    .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
        min-width: 340px;
        padding: 0px;
    }
 
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
+   .container-xxl .skills-projetos .box-portfolio .swiper
+    .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
        border-radius: 5px;
        box-shadow: 0px 0px 24px rgba(21, 21, 21, 0.659);
    }
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
+   .container-xxl .skills-projetos .box-portfolio  .swiper 
+   .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
        display: flex;
        justify-content: center;
        align-items: center;
@@ -766,18 +808,20 @@ margin: 20px 5px;
 
    /* - Titulo e descrição - Facebook - */
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook {
-       width: 40%;
+   .container-xxl .skills-projetos .box-portfolio .swiper
+    .swiper-wrapper .swiper-slide  .projeto-facebook .textos-projeto-facebook {
+       width: 100%;
        display: flex;
        padding: 30px;
        justify-content: center;
        align-items: flex-start;
        flex-direction: column;
-       border-left: 2px solid rgba(255, 183, 0, 0.542);
+       
    }
 
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
+   .container-xxl .skills-projetos .box-portfolio .swiper
+    .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
        width: 100%;
        text-align: start;
        font-family: var(--sub-title);
@@ -788,7 +832,7 @@ margin: 20px 5px;
 
    }
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
+   .container-xxl .skills-projetos .box-portfolio  .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
        font-size: 16px;
        padding-bottom: 20px;
        padding-right: 0px;
@@ -800,7 +844,7 @@ margin: 20px 5px;
        text-shadow: 0px 1px 10px rgba(10, 10, 10, 0.652);
    }
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .line-svg {
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .line-svg {
        display: flex;
        align-items: center;
        justify-content: center;
@@ -809,7 +853,7 @@ margin: 20px 5px;
 
    }
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook {
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .botoes-facebook {
        display: flex;
        margin-top: 20px;
        margin-bottom: 30px;
@@ -820,7 +864,7 @@ margin: 20px 5px;
 
    /* - Slide DS Vendas - */
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds {
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds {
        width: 30%;
        padding: 0px;
        margin-left: 120px;
@@ -948,30 +992,29 @@ margin: 20px 5px;
 
 
    .container-xxl .skills-projetos .box-portfolio .box-github {
-       background-color: hsla(143, 56%, 100%, 1);
+       background-color: var(--yellow);
        margin: 80px 0px;
-       width: 100vw;
-
+       width: 90vw;
+      border-radius: 15px;
        display: flex;
        justify-content: space-around;
        align-items: center;
        padding: 20px;
    }
 
-   .container-xxl .skills-projetos .box-portfolio .box-github .img-projetos {
-       width: 45%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
+   
 
    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
        width: 50%;
    }
 
    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .svg-projetos {
        width: 680px;
-       fill: var(--yellow);
+       fill: white
    }
 
    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .img-projetos {
@@ -979,6 +1022,10 @@ margin: 20px 5px;
    }
 
    .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
        width: 60%;
        padding: 20px;
    }
@@ -986,10 +1033,10 @@ margin: 20px 5px;
    .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git .titulo-git {
        width: 100%;
        text-align: center;
-       font-family: var(--sub-title);
+       font-family: var(--body-font);
        text-align: start;
        margin-left: 60px;
-       color: rgb(0, 0, 0);
+       color: rgb(255, 255, 255);
        font-size: 40px;
        font-weight: 500;
        text-shadow: 0px 1px 1px rgba(214, 214, 214, 0.734);
@@ -1004,8 +1051,8 @@ margin: 20px 5px;
        padding-top: 20px;
        display: flex;
        text-align: start;
-       font-family: var(--desc);
-       color: #6b6b6b;
+       font-family: var(--body-font);
+       color: #f7f7f7;
 
    }
 
@@ -1052,7 +1099,7 @@ margin: 20px 5px;
 
    @keyframes LeftAnimation {
        0% {
-           transform: translateX(-1190px);
+           transform: translateX(-100px);
        }
 
        100% {
@@ -1082,6 +1129,16 @@ margin: 20px 5px;
        }
 
    }
+   @keyframes BottomAnimation {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+
+}
 
 
    @keyframes alternateColor {
@@ -1260,6 +1317,7 @@ margin: 20px 5px;
            font-size: 50px;
            width: 100%;
            text-align: center;
+           animation: topAnimation 2s ease;
        }
 
        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .tp-2 {
@@ -1281,6 +1339,9 @@ margin: 20px 5px;
 
        .container-xxl .intro-portfolio .apresentacao .texto-main .apresentacao-imgs {
            width: 600px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
        }
 
        .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
