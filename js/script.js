@@ -1,7 +1,7 @@
  // Botôes:
+
  const btnMobile = document.getElementById('btn-mobile');
  const btnMob = document.getElementById('btn-mob');
- 
 
  // Funções:
 
@@ -18,8 +18,6 @@
      else event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
 
  }
- 
- 
 
  // Eventos:
 
