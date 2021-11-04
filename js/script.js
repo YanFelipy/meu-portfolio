@@ -19,6 +19,19 @@
 
  }
 
+function progressBar() {
+    const span = document.getElementsByClassName('percent');
+    const bar = document.getElementsByClassName('tech-bar');
+    Array.from(span).map(function(){
+        
+        
+    })
+    console.log(span);
+}
+progressBar();
+
+
+
  // Eventos:
 
  btnMobile.addEventListener('click', toggleMenu);

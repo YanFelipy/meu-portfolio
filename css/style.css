@@ -17,6 +17,7 @@
        -webkit-font-smoothing: antialiased;
        webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+       box-sizing: border-box;
    }
 
    a {
@@ -123,7 +124,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
-
+       
    }
 
    .container-xxl .intro-portfolio .apresentacao .texto-main {
@@ -179,9 +180,9 @@
        min-width: 480px;
        display: flex;
        flex-direction: column;
-       box-sizing: border-box;
+       
        align-items: flex-start;
-
+       
    }
 
 
@@ -303,15 +304,17 @@
    }
 
    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs {
-       width: 580px;
+      width: 50%;
        display: flex;
        justify-content: center;
        align-items: center;
        animation: RightAnimation 2s ease;
+       
    }
 
    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
-       width: 480px;
+      
+    min-width: 380px;
        fill: var(--yellow);
        z-index: 2;
 
@@ -794,7 +797,6 @@
    }
 
    .container-xxl .skills-projetos .section-portfolio-titulo .confira {
-
        color: var(--yellow);
        font-family: var(--body-font);
        font-size: 60px;
@@ -1251,7 +1253,7 @@
    /* Media Queries */
 
 
-   @media (max-width: 768px) {
+   @media (max-width: 798px) {
        .corpo-portfolio .header {
            justify-content: space-between;
            z-index: 1000000;
@@ -1401,6 +1403,8 @@
        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos {
            align-items: center;
            justify-content: start;
+           width: 50%;
+          
        }
 
        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .titulo-principal {
