@@ -118,9 +118,10 @@
    }
 
    .container-xxl .intro-portfolio .apresentacao {
-       margin-bottom: 100px;
+       margin-top:100px;
+       margin-bottom: 180px;
        width: 100%;
-       height: 80vh;
+       
        display: flex;
        justify-content: center;
        align-items: center;
@@ -289,14 +290,15 @@
 
    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu a {
        text-decoration: none;
-
+       
    }
 
    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu .menu-social .svg-menu {
-       width: 80%;
+       width: 50%;
        min-width: 20px;
        fill: black;
        height: 35%;
+      
        margin-bottom: 5px;
 
 
@@ -314,7 +316,7 @@
 
    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
       
-    min-width: 380px;
+    min-width: 280px;
        fill: var(--yellow);
        z-index: 2;
 
@@ -328,8 +330,8 @@
    /* ------ Sobre-Mim -------- */
 
    .container-xxl .biografia {
-       height: 90vh;
-       margin-bottom: 40px;
+       
+       margin: 230px 0px;
    }
 
    .container-xxl .biografia .box-bio {
@@ -483,10 +485,8 @@
        width: 100%;
        padding: 10px;
        border: none;
-
-
        border-radius: 5px;
-       margin: 10px;
+       margin: 10px 0px;
 
    }
 
@@ -833,7 +833,7 @@
    }
 
    .container-xxl .skills-projetos .box-portfolio .swiper {
-       width: 80%;
+       width: 100%;
        
        box-sizing: border-box;
    }
@@ -841,18 +841,24 @@
        width: 100%;
    }
 
+   .swiper-button-next:after, .swiper-button-prev:after,
+   .swiper-button-next:after, .swiper-button-next:after {
+       color: var(--yellow);
+   }
+   .swiper-pagination-bullet {
+       background: var(--yellow);
+   }
    /* --- Facebook template ---- */
 
    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook {
        width: 100%;
        display: flex;
-       flex-direction: column-reverse;
+       flex-direction: row-reverse;
        justify-content: space-around;
        align-items: center;
        padding: 20px;
        margin-bottom: 50px;
        min-width: 420px;
-
    }
 
    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide {
@@ -875,20 +881,22 @@
    }
 
 
-   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide
+    .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
        border-radius: 5px;
-       min-width: 380px;
-       max-width: 480px;
+       min-width: 280px;
+       
 
    }
 
-   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper
+    .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
        display: flex;
        justify-content: center;
        align-items: center;
        min-width: 380px;
        max-width: 480px;
-       height: 480px;
+      ;
 
    }
 
@@ -905,37 +913,32 @@
    }
 
 
-   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
-       width: 100%;
-       text-align: center;
-       font-family: var(--body-font);
-       color: var(--yellow);
-       font-size: 40px;
-       font-weight: 500;
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+   .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
+    width: 100%;
+    font-family: var(--body-font);
+    text-align: center;
+    color: rgb(14, 14, 14);
+    font-size: 40px;
+    font-weight: 500;
+   color: black
       
 
    }
 
-   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
-       font-size: 16px;
-       width: 100%;
-       text-align: center;
-       padding: 10px;
-       display: flex;
-       text-align: center;
-       font-family: var(--body-font);
-       color: rgb(84, 84, 84);
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+   .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    font-family: var(--body-font);
+    color: rgb(84, 84, 84);
        
    }
 
-   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .line-svg {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       width: 80%;
-       height: 10px;
-
-   }
+   
 
    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .botoes-facebook {
        display: flex;
@@ -948,14 +951,25 @@
 
 
    /* - Slide DS Vendas - */
+   .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds {
+    width: 80%;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    min-width: 420px;
 
+   }
    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    min-width: 320px;
+    min-width: 380px;
+    max-width: 480px;
+    height: 480px;
+
 }
 
 
@@ -986,18 +1000,18 @@
     display: flex;
     flex-direction: column;
     min-height: 600px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px
 ;
 }
    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds {
-       width: 100%;
-       display: flex;
-       padding: 30px;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
+    width: 50%;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
        
    }
 
@@ -1009,34 +1023,50 @@
        color: rgb(14, 14, 14);
        font-size: 40px;
        font-weight: 500;
-      color: var(--yellow);
+      color: black
    }
 
    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .desc-projeto-ds {
        
        font-size: 16px;
-       padding: 10px;
+       font-weight: 400;
+       padding: 20px;
        display: flex;
-       text-align: start;
+       text-align: center;
        font-family: var(--body-font);
        color: rgb(84, 84, 84);
       
    }
 
-   .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .line-svg {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-left: 60px;
-       width: 80%;
-       height: 10px;
-   }
-
    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds {
        display: flex;
        margin-bottom: 30px;
-       
+       justify-content: center;
+       width: 100%;
    }
+   .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds .bt-apr,
+   .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook .bt-apr {       
+    font-size: 12px;
+    font-family: Arial;
+    width: 210px;
+    height: 60px;
+    border-width: 1px;
+    background: var(--yellow);
+    color: #eee;
+    border: none;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+   
+
+}
 
    .container-xxl .skills-projetos .box-portfolio .links-projetos {
        text-decoration: none;
@@ -1049,6 +1079,8 @@
 
    .btn-grad {
        margin: 10px;
+       width: 220px;
+       height: 80px;
        padding: 15px 45px;
        display: flex;
        font-family: var(--sub-title);
@@ -1375,7 +1407,7 @@
            margin-top: 30px;
            margin-bottom: 40px;
            width: 100%;
-           height: 105vh;
+          
            flex-direction: column-reverse;
            align-items: center;
            justify-content: center;
@@ -1449,7 +1481,7 @@
 
            position: relative;
            margin: 2px;
-           left: 156px;
+           left: 136px;
            bottom: 22px;
            width: 120px;
 
@@ -1474,7 +1506,7 @@
            margin: 40px 0px;
            margin-top: 20px;
            width: 100%;
-           height: auto;
+           
        }
 
        .container-xxl .biografia .box-bio {
@@ -1559,6 +1591,7 @@
 
        .container-xxl .habilidades-e-carreira {
            flex-direction: column;
+           margin: 40px 0px;
 
        }
 
@@ -1598,9 +1631,27 @@
 
        /* Portfolio */
 
+       /* Swiper */
+
+        .container-xxl .skills-projetos .box-portfolio .swiper
+        {
+            min-width: 390px;
+        }
+        
+       .container-xxl .skills-projetos .box-portfolio .swiper
+        .swiper-wrapper .swiper-slide {
+            width: 100%;
+            height: 920px;
+            overflow: hidden;
+           
+        }
+
+        
+
        /* Facebook */
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook {
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper
+        .swiper-slide .projeto-facebook {
            flex-direction: column-reverse;
            justify-content: center;
            align-items: center;
@@ -1609,24 +1660,26 @@
 
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook {
+         .container-xxl .skills-projetos .box-portfolio .swiper 
+         .swiper-wrapper .swiper-slide .projeto-facebook 
+         .fotos-projetos-facebook {
            display: flex;
-           align-items: center;
+          align-items: center;
            justify-content: center;
-           width: 70%;
+          width: 280px;
+          min-width: 280px;
+       }
+     
+
+       .container-xxl .skills-projetos .box-portfolio .swiper
+        .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook
+         #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
+         width: 280px;
+         min-width: 180px;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook .slide {
-
-           min-width: 350px;
-
-       }
-
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
-           height: 320px;
-       }
-
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook {
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper
+        .swiper-slide .projeto-facebook .textos-projeto-facebook {
         width: 100%;
         display: flex;
         padding: 30px;
@@ -1635,30 +1688,34 @@
         flex-direction: column;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+       .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook{
         width: 100%;
         font-family: var(--body-font);
         text-align: center;
         color: rgb(14, 14, 14);
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 500;
-       color: var(--yellow);
+       color: black;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook{
            padding: 10px;
            margin: 0px;
            width: 100%;
+           font-size: 14px;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook {
+       .container-xxl .skills-projetos .box-portfolio .swiper
+        .swiper-wrapper .projeto-facebook .textos-projeto-facebook
+         .botoes-facebook {
            width: 100%;
            display: flex;
            align-items: center;
            justify-content: center;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook .links-projetos .btn-grad {
+       .container-xxl .skills-projetos .box-portfolio  .swiper .swiper-wrapper .projeto-facebook .textos-projeto-facebook .botoes-facebook .links-projetos .btn-grad {
            padding: 16px 5px;
            font-size: 14px;
 
@@ -1675,45 +1732,62 @@
            margin-top: 20px;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds {
-           display: flex;
-           align-items: center;
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+       .projeto-ds .fotos-projetos-ds {
+        display: flex;
+          align-items: center;
            justify-content: center;
-           width: 70%;
-           margin: 0px;
+          width: 280px;
+          min-width: 280px;
+        height: auto;
+        min-height: 0px;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds .slide {
+       .container-xxl .skills-projetos .box-portfolio .projeto-ds .swiper .swiper-wrapper
+        .swiper-slide .fotos-projetos-ds .slide {
+            height: auto;
+            min-height: 0px;
            min-width: 350px;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
-           height: 320px;
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide
+        .projeto-ds  .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
+            width: 280px;
+            height: auto;
+            min-width: 180px;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds {
-           padding: 10px;
-           justify-content: center;
-           width: 100%;
-           margin-top: 40px;
-           border: none;
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+       .projeto-ds .textos-projeto-ds {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .titulo-projeto-ds {
-           display: flex;
-           font-size: 30px;
-           margin: 0px;
-           margin-bottom: 10px;
-           justify-content: center;
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+       .projeto-ds .textos-projeto-ds .titulo-projeto-ds {
+        width: 100%;
+        font-family: var(--body-font);
+        text-align: center;
+        color: rgb(14, 14, 14);
+        font-size: 30px;
+        font-weight: 500;
+       color: black;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .desc-projeto-ds {
-           padding: 10px;
-           margin: 14px;
-           width: 100%;
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+       .projeto-ds .textos-projeto-ds .desc-projeto-ds {
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        font-size: 14px;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds {
+       .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide 
+       .projeto-ds .textos-projeto-ds .botoes-ds {
            width: 100%;
            margin: 0px;
            display: flex;
@@ -1721,7 +1795,8 @@
            justify-content: center;
        }
 
-       .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds .links-projetos .btn-grad {
+       .container-xxl .skills-projetos .box-portfolio  .swiper .swiper-wrapper .swiper-slide 
+       .projeto-ds .textos-projeto-ds .botoes-ds .links-projetos .btn-grad {
            padding: 10px 5px;
            font-size: 12px;
            width: 170px;
