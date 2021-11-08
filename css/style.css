@@ -11,6 +11,26 @@
        --yellow: rgba(255, 196, 0, 0.987);
    }
 
+   /* Scrollbar */
+
+   body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgb(255, 255, 255) 88%);
+          /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(226, 226, 226);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border-bottom: 4px solid rgb(255, 219, 17);  /* creates padding around scroll thumb */
+    border-top: 4px solid rgb(255, 219, 17);
+    
+    
+  }
+
    /* --- Config Body/Elementos --- */
 
    * {
@@ -844,6 +864,7 @@
    .swiper-button-next:after, .swiper-button-prev:after,
    .swiper-button-next:after, .swiper-button-next:after {
        color: var(--yellow);
+    font-size: 50px;
    }
    .swiper-pagination-bullet {
        background: var(--yellow);
@@ -1048,7 +1069,8 @@
    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook .bt-apr {       
     font-size: 12px;
     font-family: Arial;
-    width: 210px;
+   
+    min-width: 90px;
     height: 60px;
     border-width: 1px;
     background: var(--yellow);
@@ -1079,11 +1101,11 @@
 
    .btn-grad {
        margin: 10px;
-       width: 220px;
-       height: 80px;
+       width: 280px;
+       height: 70px;
        padding: 15px 45px;
        display: flex;
-       font-family: var(--sub-title);
+       font-family: var(--body-font);
        text-transform: uppercase;
        transition: 0.5s;
        background-size: 100% auto;
@@ -1296,6 +1318,7 @@
            border-bottom-left-radius: 5px;
            border-bottom-right-radius: 5px;
            height: 8vh;
+           
        }
 
        .corpo-portfolio .header #logo-img {
@@ -1322,7 +1345,7 @@
            visibility: hidden;
            overflow-y: hidden;
            padding: 1rem 0;
-           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.487);
+           box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.487);
            border-bottom-left-radius: 8px;
            border-bottom-right-radius: 8px;
        }
@@ -1358,7 +1381,8 @@
            background-color: transparent;
            width: 60px;
            height: 40px;
-           fill: white;
+           margin-top: 40px;
+           fill: rgba(255, 196, 0)
 
        }
 
@@ -1563,17 +1587,24 @@
 
        .container-xxl .biografia .textos-biografia .bt-apr {
            height: 55px;
-           width: 180px;
+           
        }
 
-
-
+        .bt-apr .bt-svg {
+            margin-right: 2px;
+        }
+       
 
 
        /*  Porfolio  */
+       .container-xxl .skills-projetos {
+           width: 100%;
+           padding: 0px;
+       }
 
        .container-xxl .skills-projetos .section-portfolio-titulo {
            width: 100%;
+           padding: 5px;
 
        }
 
@@ -1632,20 +1663,31 @@
        /* Portfolio */
 
        /* Swiper */
-
+       .container-xxl .skills-projetos .box-portfolio{
+           width: 100%;
+           padding: 5px;
+       }
         .container-xxl .skills-projetos .box-portfolio .swiper
         {
-            min-width: 390px;
+            width: 100%;
+            min-width: 290px;
         }
         
        .container-xxl .skills-projetos .box-portfolio .swiper
         .swiper-wrapper .swiper-slide {
             width: 100%;
+            display: flex;
+            justify-content: center;
             height: 920px;
             overflow: hidden;
            
         }
 
+        .swiper-button-next:after, .swiper-button-prev:after, .swiper-button-next:after, .swiper-button-next:after{
+          bottom: 80px;
+          position: relative;
+          font-size: 30px;
+        }
         
 
        /* Facebook */
@@ -1656,6 +1698,9 @@
            justify-content: center;
            align-items: center;
            width: 100%;
+           min-width: 320px;
+           margin: 0px;
+           padding: 0px;
            margin-bottom: 20px;
 
        }
@@ -1682,7 +1727,7 @@
         .swiper-slide .projeto-facebook .textos-projeto-facebook {
         width: 100%;
         display: flex;
-        padding: 30px;
+        padding: 10px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1729,6 +1774,7 @@
            justify-content: center;
            align-items: center;
            width: 100%;
+           min-width: 320px;
            margin-top: 20px;
        }
 
@@ -1799,7 +1845,8 @@
        .projeto-ds .textos-projeto-ds .botoes-ds .links-projetos .btn-grad {
            padding: 10px 5px;
            font-size: 12px;
-           width: 170px;
+           width: 80%;
+           min-width: 80px;
 
 
        }
@@ -1810,6 +1857,9 @@
            width: 100vw;
            flex-direction: column-reverse;
            margin-top: 20px;
+           border-radius: 0px;
+           border-top-right-radius: 40px;
+           border-top-left-radius: 40px;
        }
 
        .container-xxl .skills-projetos .box-portfolio .box-github .img-projetos {
