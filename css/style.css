@@ -2,18 +2,24 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
     /* Variaváis */
+
     :root {
+
         --body-font: 'Poppins', sans-serif;
         --desc: 'Roboto', sans-serif;
 
         /*----- Cores ---- */
-        --sub-grey: color: #a7a7a7;
+
+        --sub-grey: color: rgb(194, 194, 194);
         --yellow: rgba(255, 196, 0, 0.987);
+
+        /*----- Font-size ---- */
+        --tt-lg: font-size: 50px --st-lg: font-size: 18px;
+        --tt-sm: font-size: 40px;
+        --st-sm: font-size: 17px;
     }
 
-    .svg-menu {
-        width: 20px;
-    }
+
 
     /* Scrollbar */
 
@@ -88,17 +94,13 @@
     }
 
     .corpo-portfolio .header .yf-svg {
-        fill: black;
+        fill: rgb(0, 0, 0);
         width: 80px;
         font-family: var(--body-font);
         font-weight: 600;
-
-
+        animation: alternateColor 10s infinite ease-in-out;
     }
 
-    .corpo-portfolio .header .yf-svg:hover {
-        animation: alternateColor 10s infinite ease;
-    }
 
     .corpo-portfolio .header .navegacao .menu {
         display: flex;
@@ -151,7 +153,7 @@
 
     .container-xxl .intro-portfolio .apresentacao {
         margin-top: 100px;
-        margin-bottom: 180px;
+        margin-bottom: 100px;
         width: 100%;
 
         display: flex;
@@ -171,7 +173,7 @@
     .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr {
         font-size: 12px;
         font-family: Arial;
-        width: 210px;
+        width: 220px;
         height: 60px;
         border-width: 1px;
         background: var(--yellow);
@@ -188,8 +190,12 @@
         justify-content: space-evenly;
         padding: 10px;
         animation: BottomAnimation 2s ease;
+    }
 
-
+    .bt-apr:hover {
+        transform: scale(112%);
+        box-shadow: 0px 0px 4px #2b292998;
+        transition: ease 0.8s;
     }
 
     .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr a {
@@ -348,7 +354,7 @@
 
     .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
 
-        min-width: 280px;
+        min-width: 380px;
         fill: var(--yellow);
         z-index: 2;
 
@@ -357,6 +363,7 @@
     .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .img-apr {
         width: 160px;
         animation: Rotate 2s ease;
+        cursor: pointer;
     }
 
     /* ------ Sobre-Mim -------- */
@@ -367,10 +374,12 @@
     }
 
     .container-xxl .biografia .box-bio {
+        width: 100%;
         display: flex;
         justify-content: center;
         justify-content: space-evenly;
         align-items: center;
+        padding: 10px;
     }
 
     .container-xxl .biografia .textos-section-bio {
@@ -388,6 +397,7 @@
         font-size: 50px;
         font-weight: 600;
         line-height: 4px;
+        margin-bottom: 20px;
         animation: RightAnimation 1.5s ease;
         text-align: center;
 
@@ -406,24 +416,23 @@
 
     .container-xxl .biografia .icon-sobre-mim .sobre-img {
         display: flex;
-        width: 100%;
+        padding: 20px;
         justify-content: center;
         align-items: center;
     }
 
-    .container-xxl .biografia .icon-sobre-mim .sobre-img .img-apr {
-        width: 480px;
+    .container-xxl .biografia .icon-sobre-mim .sobre-img .img-sbr {
+        width: 440px;
         border-radius: 10px;
     }
 
     .container-xxl .textos-biografia {
-        margin-top: 50px;
-        width: 700px;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        padding: 0px;
+        padding: 20px;
     }
 
 
@@ -470,7 +479,7 @@
     .container-xxl .biografia .textos-biografia .bt-apr {
         font-size: 12px;
         font-family: Arial;
-        width: 210px;
+        width: 180px;
         height: 80px;
         border-width: 1px;
         background: var(--yellow);
@@ -522,14 +531,11 @@
 
     }
 
-
     .container-xxl .habilidades-header {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-
     }
 
     .container-xxl .habilidades-header .svg-hab-header {
@@ -610,10 +616,6 @@
     .container-xxl .habilidades .habilidades-front .tecnologias .tech .grafico .bar-react {
         width: 30%;
     }
-
-
-
-
 
     .container-xxl .habilidades .tecnologias .tech .grafico,
     .container-xxl .habilidades .tecnologias .tech .grafico .tech-bar {
@@ -701,8 +703,6 @@
         justify-content: start;
     }
 
-
-
     /* Backend */
 
     .container-xxl .habilidades .habilidades-back {
@@ -759,9 +759,6 @@
         width: 50%;
     }
 
-
-
-
     .container-xxl .habilidades .habilidades-back .back-hab-textos .server-svg {
         width: 34px;
         fill: var(--yellow);
@@ -785,15 +782,11 @@
         margin: 10px;
     }
 
-
-
     /*  Section - Portfolio */
 
     .container-portfolio {
         max-width: 1920px;
     }
-
-
 
     .container-portfolio .bg-yan {
         position: absolute;
@@ -820,6 +813,7 @@
 
     .container-xxl .skills-projetos .section-portfolio-titulo {
         padding: 20px;
+        margin: 50px 0px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -833,11 +827,7 @@
         font-family: var(--body-font);
         font-size: 50px;
         animation: TopAnimation 1.5s ease;
-
-
     }
-
-
 
     .container-xxl .skills-projetos .section-portfolio-titulo .desc {
         font-size: 18px;
@@ -852,26 +842,32 @@
     /* --- Box de Projetos ---- */
 
 
-
     .container-xxl .skills-projetos .box-portfolio {
         width: 100%;
         display: flex;
         flex-direction: column;
         min-height: 600px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 20px;
 
     }
 
     .container-xxl .skills-projetos .box-portfolio .swiper {
-        width: 100%;
-
+        width: 90%;
         box-sizing: border-box;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
 
     .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .swiper-button-next:after,
@@ -882,23 +878,6 @@
         font-size: 50px;
     }
 
-    .swiper-pagination-bullet {
-        background: var(--yellow);
-    }
-
-    /* --- Facebook template ---- */
-
-    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook {
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px;
-        margin-bottom: 50px;
-        min-width: 420px;
-    }
-
     .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide {
         display: flex;
         align-items: center;
@@ -906,40 +885,59 @@
 
     }
 
+    .swiper-pagination-bullet {
+        background: var(--yellow);
+    }
+
+    /* --- Facebook template ---- */
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook {
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 50px;
+
+    }
+
+
     /* - Slide Facebook - */
 
     .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook {
-
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         min-width: 380px;
-        padding: 0px;
+        padding: 10px;
+
     }
 
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls {
+        width: 480px;
+    }
 
     .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
+        width: 100%;
         border-radius: 5px;
-        min-width: 280px;
-
 
     }
 
-    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .img-carousel {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 380px;
-        max-width: 480px;
-        ;
+        min-width: 320px;
+        height: 420px;
+        border-radius: 15px;
 
     }
 
     /* - Titulo e descrição - Facebook - */
 
     .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook {
-        width: 100%;
+        width: 50%;
         display: flex;
         padding: 30px;
         justify-content: center;
@@ -960,6 +958,7 @@
     }
 
     .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
+
         font-size: 16px;
         font-weight: 400;
         padding: 20px;
@@ -990,7 +989,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        margin-bottom: 50px;
+
         min-width: 420px;
 
     }
@@ -1000,9 +999,7 @@
         justify-content: center;
         align-items: center;
         min-width: 380px;
-        max-width: 480px;
-        height: 480px;
-
+        padding: 10px;
     }
 
 
@@ -1021,7 +1018,8 @@
         justify-content: center;
         align-items: center;
         min-width: 320px;
-        height: 480px;
+        height: 420px;
+        border-radius: 15px;
 
     }
 
@@ -1082,7 +1080,7 @@
     .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook .bt-apr {
         font-size: 12px;
         font-family: Arial;
-
+        width: 180px;
         min-width: 90px;
         height: 60px;
         border-width: 1px;
@@ -1139,10 +1137,10 @@
     /* Visite meu Github */
 
 
-    .container-xxl .skills-projetos .box-portfolio .box-github {
+    .container-xxl .skills-projetos .box-github {
         background-color: var(--yellow);
-        margin: 80px 0px;
-        width: 90vw;
+        margin: 100px 0px;
+        width: 90%;
         border-radius: 15px;
         display: flex;
         justify-content: space-around;
@@ -1152,7 +1150,7 @@
 
 
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos {
+    .container-xxl .skills-projetos .box-github .imgs-projetos {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1160,60 +1158,61 @@
         width: 50%;
     }
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .svg-projetos {
+    .container-xxl .skills-projetos .box-github .imgs-projetos .svg-projetos {
         width: 100%;
         min-width: 410px;
         fill: white
     }
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .img-projetos {
+    .container-xxl .skills-projetos .box-github .imgs-projetos .img-projetos {
         width: 120px;
     }
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git {
+    .container-xxl .skills-projetos .box-github .box-textos-git {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        width: 60%;
+        width: 50%;
         padding: 20px;
+        margin: 20px;
     }
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git .titulo-git {
-        width: 100%;
+    .container-xxl .skills-projetos .box-github .box-textos-git .titulo-git {
+        width: 80%;
         text-align: center;
         font-family: var(--body-font);
-        text-align: start;
-        margin-left: 60px;
-        color: rgb(255, 255, 255);
-        font-size: 40px;
+        text-align: center;
+        color: black;
+        font-size: 50px;
         font-weight: 500;
         text-shadow: 0px 1px 1px rgba(214, 214, 214, 0.734);
     }
 
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git .desc-git {
+    .container-xxl .skills-projetos .box-github .box-textos-git .desc-git {
         font-size: 16px;
-        padding-left: 60px;
-        padding-bottom: 30px;
-        padding-right: 40px;
-        padding-top: 20px;
+        width: 100%;
+        margin-top: 20px;
         display: flex;
-        text-align: start;
+        padding: 25px;
+        text-align: center;
         font-family: var(--body-font);
         color: #f7f7f7;
 
     }
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .botoes-git {
+    .container-xxl .skills-projetos .box-github .botoes-git {
         display: flex;
-
+        justify-content: center;
+        width: 80%;
+        margin-left: 0px;
         margin-top: 20px;
         margin-bottom: 30px;
-        margin-left: 50px;
+
     }
 
-    .container-xxl .skills-projetos .box-portfolio .box-github .line-svg {
+    .container-xxl .skills-projetos .box-github .line-svg {
         width: 80%;
         height: 10px;
     }
@@ -1244,16 +1243,27 @@
 
     .footer .footer-box .container .titulo-footer {
         font-family: var(--body-font);
+        font-size: 45px;
         font-weight: 600;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     .footer .footer-box .container .subtitulo-footer {
         font-size: 16px;
-        margin-bottom: 15px;
-
+        margin-bottom: 10px;
+        text-align: center;
         font-family: var(--body-font);
         color: #f3f3f3;
+
+    }
+
+    .footer .footer-box .container .tel {
+        font-size: 16px;
+        margin-top: 10px;
+
+        font-family: var(--body-font);
+        color: #ffe8af;
     }
 
     .footer .footer-box .container .links-footer {
@@ -1262,7 +1272,7 @@
         font-size: 14px;
         list-style: none;
         gap: 1rem;
-        margin: 40px 0px;
+        margin: 0px 0px;
 
     }
 
@@ -1287,8 +1297,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
 
+
+    }
+
+    .footer .footer-box .container .social-footer .navegacao-social .menu {
+        margin-bottom: 0px;
     }
 
     .footer .footer-box .container .social-footer .navegacao-social .menu .svg-menu {
@@ -1302,26 +1316,13 @@
         fill: white;
     }
 
-    .footer .footer-box  .dir-footer {
+    .footer .footer-box .dir-footer {
         text-align: center;
-       margin-top: 70px;
+        margin-top: 70px;
         font-family: var(--body-font);
         font-weight: 500;
         color: rgba(255, 255, 255, 0.59);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1414,14 +1415,78 @@
         }
     }
 
-
-
-
-
-
-
-
     /* Media Queries */
+
+    @media (max-width: 1124px) {
+        .container-xxl .skills-projetos .box-github .imgs-projetos .svg-projetos {
+            min-width: 360px;
+        }
+
+        .container-xxl .skills-projetos .box-github .box-textos-git .titulo-git {
+            width: 100%;
+            font-size: 36px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos {
+            min-width: 280px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook,
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .textos-projeto-ds {
+            min-width: 320px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook,
+        .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .titulo-projeto-ds {
+            font-size: 30px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook,
+        .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .desc-projeto-ds {
+            width: 100%;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
+            width: auto;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .img-carousel,
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
+            width: 320px;
+            min-width: 280px;
+            height: 300px;
+            margin-right: 80px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .titulo-principal {
+            font-size: 64px;
+        }
+
+        .container-xxl .biografia .icon-sobre-mim .sobre-img .img-sbr {
+            width: 380px;
+
+        }
+
+        .container-xxl .biografia .textos-biografia .texto-bio {
+            width: 100%;
+        }
+
+        .container-xxl .biografia .textos-biografia .texto-bio .descricao-titulo {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-titulo {
+            font-size: 24px;
+        }
+
+        .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-nome {
+            font-size: 14px;
+        }
+    }
+
 
 
     @media (max-width: 798px) {
@@ -1600,13 +1665,13 @@
         .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .desc-titulo {
             max-width: 420px;
             font-size: 14px;
-            width: 70%;
+            width: 100%;
             margin: 10px;
             text-align: center;
         }
 
         .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll {
-            margin: 30px 0px;
+            margin: 70px 0px;
         }
 
         .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .mouse-svg {
@@ -1617,8 +1682,10 @@
 
 
         .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
-            width: 280px;
-            margin-right: 140px;
+            width: 490px;
+            min-width: 300px;
+
+            margin-right: 120px;
         }
 
         .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social {
@@ -1639,18 +1706,13 @@
             fill: rgb(19, 19, 19);
             width: 35px;
             height: 35px;
-
-
         }
-
-
 
         /*  Bio */
         .container-xxl .biografia {
             margin: 40px 0px;
             margin-top: 20px;
             width: 100%;
-
         }
 
         .container-xxl .biografia .box-bio {
@@ -1676,13 +1738,14 @@
         }
 
         .container-xxl .biografia .textos-section-bio .sobre-mim-title-section {
-            font-size: 38px;
+            font-size: 40px;
+            margin: 20px 0px;
         }
 
         .container-xxl .biografia .textos-section-bio .sobre-mim-desc-section {
-            font-size: 14px;
-            margin-bottom: 20px;
+            margin-bottom: 80px;
         }
+
 
         .container-xxl .biografia .textos-biografia .perfil-class {
             gap: 2px;
@@ -1714,8 +1777,6 @@
             margin-right: 2px;
         }
 
-
-
         /*  Porfolio  */
         .container-xxl .skills-projetos {
             width: 100%;
@@ -1733,9 +1794,16 @@
             font-size: 40px;
         }
 
-        .container-xxl .skills-projetos .section-portfolio-titulo .desc p {
-            margin-bottom: 20px;
+        .container-xxl .skills-projetos .section-portfolio-titulo .desc {
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
 
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .img-carousel {
+            width: 320px;
+            min-width: 280px;
+            height: 300px;
+            margin-right: 00px;
         }
 
         /*  Habilidades e Carreira */
@@ -1758,8 +1826,12 @@
             padding: 5px;
         }
 
-        .container-xxl .habilidades .habilidades-header .titulo-header-hab {
+        .container-xxl .habilidades-header .titulo-header-hab {
             font-size: 40px;
+        }
+
+        .container-xxl .habilidades-header .desc-habilidades {
+            font-size: 17px;
         }
 
         /*  Front */
@@ -1780,7 +1852,6 @@
             width: 100%;
         }
 
-        /* Portfolio */
 
         /* Swiper */
         .container-xxl .skills-projetos .box-portfolio {
@@ -1811,7 +1882,6 @@
             font-size: 30px;
         }
 
-
         /* Facebook */
 
         .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook {
@@ -1833,7 +1903,6 @@
             width: 280px;
             min-width: 280px;
         }
-
 
         .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
             width: 280px;
@@ -1879,7 +1948,6 @@
 
         }
 
-
         /* Projeto-ds */
 
         .container-xxl .skills-projetos .box-portfolio .projeto-ds {
@@ -1910,6 +1978,7 @@
         .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
             width: 280px;
             height: auto;
+            margin: 0px;
             min-width: 180px;
         }
 
@@ -1952,13 +2021,11 @@
             font-size: 12px;
             width: 80%;
             min-width: 80px;
-
-
         }
 
         /* Meu-Github */
 
-        .container-xxl .skills-projetos .box-portfolio .box-github {
+        .container-xxl .skills-projetos .box-github {
             width: 100vw;
             flex-direction: column-reverse;
             margin-top: 20px;
@@ -1967,14 +2034,14 @@
             border-top-left-radius: 40px;
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .img-projetos {
+        .container-xxl .skills-projetos .box-github .img-projetos {
             width: 45%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos {
+        .container-xxl .skills-projetos .box-github .imgs-projetos {
             width: 100vw;
             display: flex;
             align-items: center;
@@ -1982,24 +2049,24 @@
             margin-bottom: 5px;
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .svg-projetos {
+        .container-xxl .skills-projetos .box-github .imgs-projetos .svg-projetos {
 
             width: 320px;
 
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .imgs-projetos .img-projetos {
+        .container-xxl .skills-projetos .box-github .imgs-projetos .img-projetos {
             width: 120px;
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git {
+        .container-xxl .skills-projetos .box-github .box-textos-git {
 
             width: 100%;
             align-items: center;
             justify-content: center;
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git .titulo-git {
+        .container-xxl .skills-projetos .box-github .box-textos-git .titulo-git {
             margin: 5px 0px;
             display: flex;
             align-items: center;
@@ -2008,19 +2075,37 @@
 
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .box-textos-git .desc-git {
+        .container-xxl .skills-projetos .box-github .box-textos-git .desc-git {
             padding: 10px;
         }
 
-        .container-xxl .skills-projetos .box-portfolio .box-github .botoes-git {
+        .container-xxl .skills-projetos .box-github .botoes-git {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 20px;
             margin-bottom: 30px;
             margin-left: 0px;
+        }
 
+        /* Portfolio */
 
+        .container-xxl .skills-projetos .section-portfolio-titulo {
+            margin: 0px
+        }
+
+        /* Footer */
+        .footer .footer-box .container {
+            padding-left: 15px;
+            row-gap: 1rem;
+            align-items: flex-start;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer .footer-box .container .links-footer {
+            flex-direction: column;
         }
 
     }
