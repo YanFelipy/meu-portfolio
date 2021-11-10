@@ -575,10 +575,21 @@
     /* Tecnologias */
 
     .container-xxl .habilidades .tecnologias {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        margin: 20px 0px;
         display: flex;
         flex-direction: column;
+    }
+
+    .container-xxl .habilidades .active {
         padding: 10px;
-        margin: 20px 0px;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        animation: TopAnimation 0.5s ease;
+
     }
 
     .container-xxl .habilidades .tecnologias .tech {
@@ -689,11 +700,17 @@
     .container-xxl .habilidades .front-hab-textos .desc-front {
         font-family: var(--body-font);
 
-        color: rgb(22, 22, 22);
+        color: var(--sub-grey);
     }
 
-    .container-xxl .habilidades .front-hab-textos .down-svg {
-        width: 20px;
+    .container-xxl .habilidades .front-hab-textos .btn-down {
+        background: none;
+        border: none;
+        animation: TopAnimationButtons 2s ease-in-out infinite alternate;
+    }
+
+    .container-xxl .habilidades .front-hab-textos .btn-down .down-svg {
+        width: 30px;
     }
 
     .container-xxl .habilidades .habilidades-front .tecnologias {
@@ -728,7 +745,17 @@
 
     .container-xxl .habilidades .back-hab-textos .desc-back {
         font-family: var(--body-font);
-        color: #a7a7a7;
+        color: var(--sub-grey);
+    }
+
+    .container-xxl .habilidades .back-hab-textos .btn-down {
+        background: none;
+        border: none;
+        animation: TopAnimationButtons 2s ease-in-out infinite alternate;
+    }
+
+    .container-xxl .habilidades .back-hab-textos .btn-down .down-svg {
+        width: 30px;
     }
 
     .container-xxl .habilidades .habilidades-back .tecnologias {
@@ -1413,6 +1440,17 @@
         100% {
             fill: black;
         }
+    }
+
+    @keyframes TopAnimationButtons {
+        0% {
+            transform: translateY(-5px);
+        }
+
+        100% {
+            transform: translate(0px);
+        }
+
     }
 
     /* Media Queries */
