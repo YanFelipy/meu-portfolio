@@ -1,0 +1,2149 @@
+    /* Imports */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    /* Variaváis */
+
+    :root {
+
+        --body-font: 'Poppins', sans-serif;
+        --desc: 'Roboto', sans-serif;
+
+        /*----- Cores ---- */
+
+        --sub-grey: color: rgb(194, 194, 194);
+        --yellow: rgba(255, 196, 0, 0.987);
+
+        /*----- Font-size ---- */
+        --tt-lg: font-size: 50px --st-lg: font-size: 18px;
+        --tt-sm: font-size: 40px;
+        --st-sm: font-size: 17px;
+    }
+
+
+
+    /* Scrollbar */
+
+    body::-webkit-scrollbar {
+        width: 10px;
+        /* width of the entire scrollbar */
+    }
+
+    body::-webkit-scrollbar-track {
+        background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgb(255, 255, 255) 88%);
+        /* color of the tracking area */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: rgb(226, 226, 226);
+        /* color of the scroll thumb */
+        border-radius: 20px;
+        /* roundness of the scroll thumb */
+        border-bottom: 4px solid rgb(255, 219, 17);
+        /* creates padding around scroll thumb */
+        border-top: 4px solid rgb(255, 219, 17);
+
+
+    }
+
+    /* --- Config Body/Elementos --- */
+
+    * {
+        -webkit-font-smoothing: antialiased;
+        webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .corpo-portfolio,
+    ul {
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    .corpo-portfolio {
+        user-select: text;
+        background: rgb(252, 252, 252);
+        background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgb(255, 255, 255) 88%);
+
+    }
+
+    .corpo-portfolio .container-sobre {
+        margin-top: 20px;
+
+    }
+
+    /* -----  Header ------ */
+
+    .corpo-portfolio .header {
+
+        top: 0px;
+        z-index: 9000;
+        width: 100%;
+        display: flex;
+        height: 80px;
+        padding: 1rem;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    .corpo-portfolio .header .yf-svg {
+        fill: rgb(0, 0, 0);
+        width: 80px;
+        font-family: var(--body-font);
+        font-weight: 600;
+        animation: alternateColor 10s infinite ease-in-out;
+    }
+
+
+    .corpo-portfolio .header .navegacao .menu {
+        display: flex;
+        list-style: none;
+        gap: .5rem;
+        animation: RightAnimation 1s ease;
+    }
+
+    .corpo-portfolio .header .navegacao .menu a {
+        display: block;
+        padding: .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: var(--body-font);
+        line-height: 1;
+        font-weight: 600;
+        cursor: pointer;
+        -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        color: #2b2929;
+
+    }
+
+    .corpo-portfolio .header .navegacao .menu a:hover {
+        color: var(--yellow);
+    }
+
+    .corpo-portfolio .header .navegacao #btn-mobile {
+        display: none;
+    }
+
+    .corpo-portfolio .header .navegacao .menu .button-up {
+        display: none;
+    }
+
+
+    /* -----  Main ------ */
+
+    .container-xxl .intro-portfolio {
+        width: 100%;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px;
+
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr {
+        font-size: 12px;
+        font-family: Arial;
+        width: 220px;
+        height: 60px;
+        border-width: 1px;
+        background: var(--yellow);
+        color: #eee;
+        border: none;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        animation: BottomAnimation 2s ease;
+    }
+
+    .bt-apr:hover {
+        transform: scale(112%);
+        box-shadow: 0px 0px 4px #2b292998;
+        transition: ease 0.8s;
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr a {
+        color: #eee;
+        font-family: var(--body-font);
+        font-size: 18px;
+        margin-top: 2px;
+
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .bt-apr .svg-menu {
+        fill: white;
+        width: 20px;
+
+    }
+
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos {
+        padding: 10px;
+        min-width: 480px;
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .titulo-principal {
+        min-width: 400px;
+        text-align: start;
+        font-family: var(--body-font);
+        color: #2b2929;
+        font-size: 5rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 1;
+        -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        animation: TopAnimation 2s ease;
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .titulo-principal .yf {
+        background: #fceabb;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffd06c, #f8b500);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #fadf9b, #f8b500);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .tp-2 {
+        font-size: 30px;
+        text-align: start;
+        color: var(--sub-grey);
+        font-family: var(--body-font);
+        font-weight: 500;
+        line-height: 2rem;
+        margin-bottom: 10px;
+        webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+        animation: LeftAnimation 2s ease;
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .desc-titulo {
+        font-family: var(--body-font);
+        color: #a7a7a7;
+        font-size: 16px;
+        font-weight: 400;
+        animation: LeftAnimation 2s ease;
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;
+        gap: 3 px;
+        animation: BottomAnimation 2s ease;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll .mouse-svg {
+        width: 20px;
+        fill: var(--yellow);
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll span {
+        margin: 0px;
+        font-family: var(--body-font);
+        font-weight: 500;
+        color: #a7a7a7;
+        font-size: 16px;
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll .arrow-down {
+        width: 20px;
+        fill: var(--yellow);
+    }
+
+
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: start;
+        right: -135px;
+        bottom: 65px;
+        width: 110px;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        margin: 30px;
+        width: 90px;
+        z-index: 4;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu a {
+        text-decoration: none;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu .menu-social .svg-menu {
+        width: 60%;
+        min-width: 10px;
+        fill: black;
+        height: 35%;
+
+        margin-bottom: 5px;
+
+
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: RightAnimation 2s ease;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
+
+        min-width: 380px;
+        fill: var(--yellow);
+        z-index: 2;
+
+    }
+
+    .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .img-apr {
+        width: 160px;
+        animation: Rotate 2s ease;
+        cursor: pointer;
+    }
+
+    /* ------ Sobre-Mim -------- */
+
+    .container-xxl .biografia {
+
+        margin: 230px 0px;
+    }
+
+    .container-xxl .biografia .box-bio {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container-xxl .biografia .textos-section-bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+
+    }
+
+    .container-xxl .biografia .textos-section-bio .sobre-mim-title-section {
+        color: #2b2929;
+        font-family: var(--body-font);
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 4px;
+        margin-bottom: 20px;
+        animation: RightAnimation 1.5s ease;
+        text-align: center;
+
+
+    }
+
+    .container-xxl .biografia .textos-section-bio .sobre-mim-desc-section {
+        width: 100%;
+        color: rgb(194, 194, 194);
+        font-family: var(--body-font);
+        font-size: 17px;
+        animation: RightAnimation 1.5s ease;
+        text-align: center;
+
+    }
+
+    .container-xxl .biografia .icon-sobre-mim .sobre-img {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-xxl .biografia .icon-sobre-mim .sobre-img .img-sbr {
+        width: 440px;
+        border-radius: 10px;
+    }
+
+    .container-xxl .textos-biografia {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+
+    .container-xxl .biografia .texto-bio {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        width: 50%;
+        padding: 10px;
+
+    }
+
+    .container-xxl .biografia .textos-biografia .texto-bio .descricao-titulo {
+        font-size: 16px;
+        text-align: center;
+        font-family: var(--body-font);
+        color: var(--sub-grey);
+
+    }
+
+    .container-xxl .biografia .textos-biografia .perfil-class {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .container-xxl .biografia .textos-biografia .perfil-class div {
+        font-family: var(--body-font);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 5px;
+
+    }
+
+    .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-titulo {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+
+
+
+    .container-xxl .biografia .textos-biografia .bt-apr {
+        font-size: 12px;
+        font-family: Arial;
+        width: 180px;
+        height: 80px;
+        border-width: 1px;
+        background: var(--yellow);
+        color: #eee;
+        border: none;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .container-xxl .biografia .textos-biografia .bt-apr a {
+        color: #eee;
+        font-family: var(--body-font);
+        font-size: 18px;
+    }
+
+    .container-xxl .biografia .textos-biografia .bt-apr .svg-download {
+        fill: white;
+        width: 20px;
+
+    }
+
+
+    /* ------ Habilidades -------- */
+
+    .container-habilidades {
+
+        filter: drop-shadow(2225px);
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 80px;
+    }
+
+    .container-xxl .habilidades {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0px;
+
+    }
+
+    .container-xxl .habilidades-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-xxl .habilidades-header .svg-hab-header {
+        width: 60px;
+        fill: white;
+    }
+
+    .container-xxl .habilidades-header .titulo-header-hab {
+        font-family: var(--body-font);
+        text-align: center;
+        color: rgb(46, 46, 46);
+
+        margin-top: 20px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .container-xxl .habilidades-header .desc-habilidades {
+        color: rgb(164, 164, 164);
+        font-family: var(--body-font);
+        font-weight: 400;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .container-xxl .habilidades-e-carreira {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 30px;
+    }
+
+    /* Tecnologias */
+
+    .container-xxl .habilidades .tecnologias {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-xxl .habilidades .active {
+        padding: 10px;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        animation: TopAnimation 0.5s ease;
+
+    }
+
+    .container-xxl .habilidades .tecnologias .tech {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+
+    .container-xxl .habilidades .tecnologias .tech .grafico {
+        background-color: #fde6a5;
+        margin: 15px 0px;
+    }
+
+    .container-xxl .habilidades .tecnologias .tech .grafico .tech-bar {
+        display: block;
+        background-color: var(--yellow);
+
+    }
+
+    /* CONTROLE DA BARRA DE HABILIDADES - FRONTEND */
+
+    .container-xxl .habilidades .habilidades-front .tecnologias .tech .grafico .bar-html {
+        width: 80%;
+    }
+
+    .container-xxl .habilidades .habilidades-front .tecnologias .tech .grafico .bar-css {
+        width: 75%;
+    }
+
+    .container-xxl .habilidades .habilidades-front .tecnologias .tech .grafico .bar-js {
+        width: 50%;
+    }
+
+    .container-xxl .habilidades .habilidades-front .tecnologias .tech .grafico .bar-react {
+        width: 30%;
+    }
+
+    .container-xxl .habilidades .tecnologias .tech .grafico,
+    .container-xxl .habilidades .tecnologias .tech .grafico .tech-bar {
+        height: 5px;
+        border-radius: .25rem;
+
+    }
+
+    .container-xxl .habilidades .tecnologias .tech .tech-nome {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+    }
+
+    .container-xxl .habilidades .tecnologias .tech .tech-nome span {
+        font-family: var(--body-font);
+        color: rgb(164, 164, 164);
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .container-xxl .habilidades .tecnologias .tech h4 {
+        width: 100%;
+
+    }
+
+    .container-xxl .habilidades .tecnologias .svg-tech {
+        margin: 5px;
+        width: 30px;
+    }
+
+    /* Frontend */
+
+    .container-xxl .habilidades .habilidades-front {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+
+    }
+
+    .container-xxl .habilidades .habilidades-front .front-hab-textos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .container-xxl .habilidades .habilidades-front .front-hab-textos .arrow-svg {
+        width: 34px;
+        fill: var(--yellow);
+    }
+
+
+    .container-xxl .habilidades .front-hab-textos .habilidades-textos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-xxl .habilidades .front-hab-textos .titulo-front {
+        font-family: var(--body-font);
+        font-weight: 500;
+        color: rgb(22, 22, 22);
+    }
+
+    .container-xxl .habilidades .front-hab-textos .desc-front {
+        font-family: var(--body-font);
+
+        color: var(--sub-grey);
+    }
+
+    .container-xxl .habilidades .front-hab-textos .btn-down {
+        background: none;
+        border: none;
+        animation: TopAnimationButtons 2s ease-in-out infinite alternate;
+    }
+
+    .container-xxl .habilidades .front-hab-textos .btn-down .down-svg {
+        width: 30px;
+    }
+
+    .container-xxl .habilidades .habilidades-front .tecnologias {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    /* Backend */
+
+    .container-xxl .habilidades .habilidades-back {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container-xxl .habilidades .habilidades-back .back-hab-textos .habilidades-textos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .container-xxl .habilidades .back-hab-textos .titulo-back {
+        font-family: var(--body-font);
+        color: rgb(0, 0, 0);
+    }
+
+    .container-xxl .habilidades .back-hab-textos .desc-back {
+        font-family: var(--body-font);
+        color: var(--sub-grey);
+    }
+
+    .container-xxl .habilidades .back-hab-textos .btn-down {
+        background: none;
+        border: none;
+        animation: TopAnimationButtons 2s ease-in-out infinite alternate;
+    }
+
+    .container-xxl .habilidades .back-hab-textos .btn-down .down-svg {
+        width: 30px;
+    }
+
+    .container-xxl .habilidades .habilidades-back .tecnologias {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .container-xxl .habilidades .habilidades-back .tecnologias .tech {
+        width: 100%;
+        display: flex;
+    }
+
+
+    /* CONTROLE DA BARRA DE HABILIDADES - BACKEND */
+
+
+    .container-xxl .habilidades .habilidades-back .tecnologias .tech .grafico .bar-java {
+        width: 60%;
+    }
+
+    .container-xxl .habilidades .habilidades-back .tecnologias .tech .grafico .bar-postgre {
+        width: 40%;
+    }
+
+    .container-xxl .habilidades .habilidades-back .tecnologias .tech .grafico .bar-node {
+        width: 50%;
+    }
+
+    .container-xxl .habilidades .habilidades-back .back-hab-textos .server-svg {
+        width: 34px;
+        fill: var(--yellow);
+
+    }
+
+    .container-xxl .habilidades .back-hab-textos .down-svg {
+        width: 20px;
+    }
+
+    /* ----- Carreira --- */
+    .container-habilidades .carreira {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: rgb(247, 247, 247);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.79);
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    /*  Section - Portfolio */
+
+    .container-portfolio {
+        max-width: 1920px;
+    }
+
+    .container-portfolio .bg-yan {
+        position: absolute;
+
+        width: 100vw;
+        min-width: 1920px;
+        height: 1700px;
+        left: 0px;
+        filter: contrast(-90%);
+        filter: saturate(0%);
+        opacity: 8%;
+        z-index: 0;
+    }
+
+    .container-xxl .skills-projetos {
+        width: 100%;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container-xxl .skills-projetos .section-portfolio-titulo {
+        padding: 20px;
+        margin: 50px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+
+    }
+
+    .container-xxl .skills-projetos .section-portfolio-titulo .confira {
+        color: rgb(24, 24, 24);
+        font-family: var(--body-font);
+        font-size: 50px;
+        animation: TopAnimation 1.5s ease;
+    }
+
+    .container-xxl .skills-projetos .section-portfolio-titulo .desc {
+        font-size: 18px;
+        text-align: center;
+        color: rgb(143, 143, 143);
+        font-family: var(--body-font);
+        line-height: 5px;
+        margin-bottom: 30px;
+
+    }
+
+    /* --- Box de Projetos ---- */
+
+
+    .container-xxl .skills-projetos .box-portfolio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 600px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .swiper {
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after,
+    .swiper-button-next:after,
+    .swiper-button-next:after {
+        color: var(--yellow);
+        font-size: 50px;
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .swiper-pagination-bullet {
+        background: var(--yellow);
+    }
+
+    /* --- Facebook template ---- */
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook {
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 50px;
+
+    }
+
+
+    /* - Slide Facebook - */
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 380px;
+        padding: 10px;
+
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls {
+        width: 480px;
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
+        width: 100%;
+        border-radius: 5px;
+
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .img-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 320px;
+        height: 420px;
+        border-radius: 15px;
+
+    }
+
+    /* - Titulo e descrição - Facebook - */
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook {
+        width: 50%;
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
+        width: 100%;
+        font-family: var(--body-font);
+        text-align: center;
+        color: rgb(14, 14, 14);
+        font-size: 40px;
+        font-weight: 500;
+        color: black
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
+
+        font-size: 16px;
+        font-weight: 400;
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        font-family: var(--body-font);
+        color: rgb(84, 84, 84);
+
+    }
+
+
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .botoes-facebook {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --- DS Vendas ---- */
+
+
+    /* - Slide DS Vendas - */
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds {
+        width: 80%;
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        min-width: 420px;
+
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 380px;
+        padding: 10px;
+    }
+
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs {
+        width: 480px;
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner {
+        width: 100%;
+        border-radius: 5px;
+
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 320px;
+        height: 420px;
+        border-radius: 15px;
+
+    }
+
+
+    /* - Titulo e descrição - DS Vendas - */
+
+    .container-xxl .skills-projetos .box-portfolio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 600px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds {
+        width: 50%;
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .titulo-projeto-ds {
+        width: 100%;
+        font-family: var(--body-font);
+        text-align: center;
+        color: rgb(14, 14, 14);
+        font-size: 40px;
+        font-weight: 500;
+        color: black
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .desc-projeto-ds {
+
+        font-size: 16px;
+        font-weight: 400;
+        padding: 20px;
+        display: flex;
+        text-align: center;
+        font-family: var(--body-font);
+        color: rgb(84, 84, 84);
+
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .botoes-ds .bt-apr,
+    .container-xxl .skills-projetos .box-portfolio .projeto-facebook .textos-projeto-facebook .botoes-facebook .bt-apr {
+        font-size: 12px;
+        font-family: Arial;
+        width: 180px;
+        min-width: 90px;
+        height: 60px;
+        border-width: 1px;
+        background: var(--yellow);
+        color: #eee;
+        border: none;
+        font-weight: bold;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+
+
+    }
+
+    .container-xxl .skills-projetos .box-portfolio .links-projetos {
+        text-decoration: none;
+    }
+
+
+    .btn-grad {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+    }
+
+    .btn-grad {
+        margin: 10px;
+        width: 280px;
+        height: 70px;
+        padding: 15px 45px;
+        display: flex;
+        font-family: var(--body-font);
+
+        transition: 0.5s;
+        background-size: 100% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .btn-grad:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: rgb(255, 183, 1);
+        text-decoration: none;
+    }
+
+
+    /* Visite meu Github */
+
+
+    .container-xxl .skills-projetos .box-github {
+        background-color: var(--yellow);
+        margin: 100px 0px;
+        width: 90%;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+
+
+    .container-xxl .skills-projetos .box-github .imgs-projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .container-xxl .skills-projetos .box-github .imgs-projetos .svg-projetos {
+        width: 100%;
+        min-width: 410px;
+        fill: white
+    }
+
+    .container-xxl .skills-projetos .box-github .imgs-projetos .img-projetos {
+        width: 120px;
+    }
+
+    .container-xxl .skills-projetos .box-github .box-textos-git {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .container-xxl .skills-projetos .box-github .box-textos-git .titulo-git {
+        width: 80%;
+        text-align: center;
+        font-family: var(--body-font);
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        font-weight: 500;
+        text-shadow: 0px 1px 1px rgba(214, 214, 214, 0.734);
+    }
+
+
+    .container-xxl .skills-projetos .box-github .box-textos-git .desc-git {
+        font-size: 16px;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        padding: 25px;
+        text-align: center;
+        font-family: var(--body-font);
+        color: #f7f7f7;
+
+    }
+
+    .container-xxl .skills-projetos .box-github .botoes-git {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .container-xxl .skills-projetos .box-github .line-svg {
+        width: 80%;
+        height: 10px;
+    }
+
+
+
+    /* Footer */
+    .footer {
+        padding-top: 2rem;
+    }
+
+    .footer .footer-box {
+        background-color: var(--yellow);
+        padding: 2rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer .footer-box .container {
+        gap: 120px;
+        row-gap: 3.5rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer .footer-box .container .titulo-footer {
+        font-family: var(--body-font);
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .footer .footer-box .container .subtitulo-footer {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: var(--body-font);
+        color: #f3f3f3;
+
+    }
+
+    .footer .footer-box .container .tel {
+        font-size: 16px;
+        margin-top: 10px;
+
+        font-family: var(--body-font);
+        color: #ffe8af;
+    }
+
+    .footer .footer-box .container .links-footer {
+        display: flex;
+        font-family: var(--body-font);
+        font-size: 14px;
+        list-style: none;
+        gap: 1rem;
+        margin: 0px 0px;
+
+    }
+
+    .footer .footer-box .container .links-footer a {
+        color: #fff1c4;
+        list-style: none;
+    }
+
+    .footer .footer-box .container .links-footer a:hover {
+        color: white;
+    }
+
+    .footer .footer-box .container .social-footer .navegacao-social .menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    .footer .footer-box .container .social-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .footer .footer-box .container .social-footer .navegacao-social .menu {
+        margin-bottom: 0px;
+    }
+
+    .footer .footer-box .container .social-footer .navegacao-social .menu .svg-menu {
+        width: 30px;
+        fill: #faebb9;
+
+
+    }
+
+    .footer .footer-box .container .social-footer .navegacao-social .menu .svg-menu:hover {
+        fill: white;
+    }
+
+    .footer .footer-box .dir-footer {
+        text-align: center;
+        margin-top: 70px;
+        font-family: var(--body-font);
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.59);
+    }
+
+
+
+    /* Animations */
+
+    @keyframes Rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    @keyframes LeftAnimation {
+        0% {
+            transform: translateX(-100px);
+        }
+
+        100% {
+            transform: translate(0px);
+        }
+
+    }
+
+    @keyframes RightAnimation {
+        0% {
+            transform: translateX(100px);
+        }
+
+        100% {
+            transform: translate(0px);
+        }
+
+    }
+
+    @keyframes TopAnimation {
+        0% {
+            transform: translateY(-100px);
+        }
+
+        100% {
+            transform: translate(0px);
+        }
+
+    }
+
+    @keyframes BottomAnimation {
+        0% {
+            transform: translateY(100px);
+        }
+
+        100% {
+            transform: translate(0px);
+        }
+
+    }
+
+
+    @keyframes alternateColor {
+        0% {
+            fill: var(--yellow);
+        }
+
+        15% {
+            fill: rgb(61, 61, 61);
+        }
+
+        30% {
+            fill: var(--yellow);
+
+        }
+
+        35% {
+            fill: rgb(61, 61, 61);
+        }
+
+        50% {
+            fill: var(--yellow);
+        }
+
+        65% {
+            fill: rgb(61, 61, 61);
+        }
+
+        85% {
+            fill: var(--yellow);
+        }
+
+        100% {
+            fill: black;
+        }
+    }
+
+    @keyframes TopAnimationButtons {
+        0% {
+            transform: translateY(-5px);
+        }
+
+        100% {
+            transform: translate(0px);
+        }
+
+    }
+
+    /* Media Queries */
+
+    @media (max-width: 1124px) {
+        .container-xxl .skills-projetos .box-github .imgs-projetos .svg-projetos {
+            min-width: 360px;
+        }
+
+        .container-xxl .skills-projetos .box-github .box-textos-git .titulo-git {
+            width: 100%;
+            font-size: 36px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos {
+            min-width: 280px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook,
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .textos-projeto-ds {
+            min-width: 320px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook,
+        .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .titulo-projeto-ds {
+            font-size: 30px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook,
+        .container-xxl .skills-projetos .box-portfolio .projeto-ds .textos-projeto-ds .desc-projeto-ds {
+            width: 100%;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner {
+            width: auto;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .img-carousel,
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
+            width: 320px;
+            min-width: 280px;
+            height: 300px;
+            margin-right: 80px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .titulo-principal {
+            font-size: 64px;
+        }
+
+        .container-xxl .biografia .icon-sobre-mim .sobre-img .img-sbr {
+            width: 380px;
+
+        }
+
+        .container-xxl .biografia .textos-biografia .texto-bio {
+            width: 100%;
+        }
+
+        .container-xxl .biografia .textos-biografia .texto-bio .descricao-titulo {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-titulo {
+            font-size: 24px;
+        }
+
+        .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-nome {
+            font-size: 14px;
+        }
+    }
+
+
+
+    @media (max-width: 798px) {
+        .corpo-portfolio .header {
+            justify-content: space-between;
+            z-index: 1000000;
+            position: fixed;
+            background: rgb(252, 252, 252);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+            margin: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 8vh;
+
+        }
+
+        .corpo-portfolio .header #logo-img {
+            width: 40px;
+            border-radius: 30px;
+        }
+
+        .corpo-portfolio .header .navegacao #btn-mobile {
+            display: flex;
+        }
+
+        .corpo-portfolio .header .navegacao .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            top: 70px;
+            right: 0px;
+            background: rgba(252, 252, 252, 0.98);
+            height: 0px;
+            transition: .6s;
+            z-index: 100;
+            visibility: hidden;
+            overflow-y: hidden;
+            padding: 1rem 0;
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.487);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .corpo-portfolio .header .yf-svg {
+            width: 65px;
+        }
+
+        .corpo-portfolio .header .active .menu {
+            height: 40vh;
+            align-items: center;
+            overflow-y: auto;
+            visibility: visible;
+
+        }
+
+        .corpo-portfolio .header .navegacao .menu .links-menu {
+            border-bottom: rgba(255, 196, 0) 1px solid;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .corpo-portfolio .header .navegacao .menu .button-up {
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .corpo-portfolio .header .navegacao .menu .btn-mob {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .corpo-portfolio .header .navegacao .menu .button-up .seta-circular {
+            background-color: transparent;
+            width: 60px;
+            height: 40px;
+            margin-top: 40px;
+            fill: rgba(255, 196, 0)
+        }
+
+
+        .corpo-portfolio .header .navegacao .menu a {
+            font-weight: 500;
+            font-size: 20px;
+            padding: 1rem 0;
+            margin: 5px 0px;
+        }
+
+        .corpo-portfolio .header .navegacao #btn-mobile {
+            display: flex;
+            padding: .5rem 1rem;
+            border: none;
+
+            background: none;
+            cursor: pointer;
+            gap: .5rem
+        }
+
+        .corpo-portfolio .header .navegacao #btn-mobile #hamburguer {
+            border-top: solid 2px;
+            color: var(--yellow);
+            width: 20px;
+
+        }
+
+        .corpo-portfolio .header .navegacao #btn-mobile #hamburguer:after,
+        .corpo-portfolio .header .navegacao #btn-mobile #hamburguer:before {
+            content: '';
+            display: block;
+            background-color: currentColor;
+            margin-top: 5px;
+            height: 2px;
+            width: 20px;
+        }
+
+        /* Main */
+
+        .container-xxl .intro-portfolio {
+            margin: 0px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            width: 100%;
+
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: start;
+            align-items: center;
+            z-index: 0;
+            width: 100%;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao-imgs {
+            width: 100%;
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos {
+            align-items: center;
+            justify-content: start;
+            width: 50%;
+
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .titulo-principal {
+            font-size: 50px;
+            width: 100%;
+            text-align: center;
+            animation: topAnimation 2s ease;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .tp-2 {
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+            margin: 10px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .desc-titulo {
+            max-width: 420px;
+            font-size: 14px;
+            width: 100%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .roll {
+            margin: 70px 0px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .texto-main .apr-textos .mouse-svg {
+            width: 30px;
+            fill: saddlebrown;
+        }
+
+
+
+        .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .svg-apr {
+            width: 490px;
+            min-width: 300px;
+
+            margin-right: 120px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social {
+
+            position: relative;
+            margin: 2px;
+            left: 136px;
+            bottom: 22px;
+            width: 120px;
+
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu .menu-social {
+            width: 10px;
+        }
+
+        .container-xxl .intro-portfolio .apresentacao .apresentacao-imgs .navegacao-social .menu .menu-social .svg-menu {
+            fill: rgb(19, 19, 19);
+            width: 35px;
+            height: 35px;
+        }
+
+        /*  Bio */
+        .container-xxl .biografia {
+            margin: 40px 0px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .container-xxl .biografia .box-bio {
+            flex-direction: column;
+        }
+
+        .container-xxl .biografia .icon-sobre-mim .sobre-img .img-apr {
+            width: 320px;
+        }
+
+        .container-xxl .intro-portfolio .biografia-main .texto-biografia {
+            margin-top: 00px;
+            width: 90%;
+        }
+
+        .container-xxl .biografia .textos-biografia {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        .container-xxl .biografia .textos-section-bio {
+            margin-bottom: 25px;
+        }
+
+        .container-xxl .biografia .textos-section-bio .sobre-mim-title-section {
+            font-size: 40px;
+            margin: 20px 0px;
+        }
+
+        .container-xxl .biografia .textos-section-bio .sobre-mim-desc-section {
+            margin-bottom: 80px;
+        }
+
+
+        .container-xxl .biografia .textos-biografia .perfil-class {
+            gap: 2px;
+        }
+
+        .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-titulo {
+            font-size: 24px;
+        }
+
+        .container-xxl .biografia .textos-biografia .perfil-class .sobre-info-nome {
+            font-size: 12px;
+        }
+
+        .container-xxl .biografia .textos-biografia .texto-bio {
+            width: 100%;
+        }
+
+        .container-xxl .biografia .textos-biografia .texto-bio .descricao-titulo {
+            font-size: 14px;
+
+        }
+
+        .container-xxl .biografia .textos-biografia .bt-apr {
+            height: 55px;
+
+        }
+
+        .bt-apr .bt-svg {
+            margin-right: 2px;
+        }
+
+        /*  Porfolio  */
+        .container-xxl .skills-projetos {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .container-xxl .skills-projetos .section-portfolio-titulo {
+            width: 100%;
+            padding: 5px;
+
+        }
+
+
+        .container-xxl .skills-projetos .section-portfolio-titulo .confira {
+            font-size: 40px;
+        }
+
+        .container-xxl .skills-projetos .section-portfolio-titulo .desc {
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .img-carousel {
+            width: 320px;
+            min-width: 280px;
+            height: 300px;
+            margin-right: 00px;
+        }
+
+        /*  Habilidades e Carreira */
+
+        .container-xxl .habilidades-e-carreira {
+            flex-direction: column;
+            margin: 40px 0px;
+
+        }
+
+        /* Habilidades */
+        .container-xxl .habilidades {
+            width: 100%;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .container-xxl .habilidades .habilidades-header {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .container-xxl .habilidades-header .titulo-header-hab {
+            font-size: 40px;
+        }
+
+        .container-xxl .habilidades-header .desc-habilidades {
+            font-size: 17px;
+        }
+
+        /*  Front */
+        .container-xxl .habilidades .habilidades-front {
+            width: 100%;
+            padding: 10px;
+        }
+
+        /*  Back */
+        .container-xxl .habilidades .habilidades-back {
+            width: 100%;
+            padding: 10px;
+        }
+
+        /* Carreira */
+
+        .container-xxl .carreira {
+            width: 100%;
+        }
+
+
+        /* Swiper */
+        .container-xxl .skills-projetos .box-portfolio {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper {
+            width: 100%;
+            min-width: 290px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 920px;
+            overflow: hidden;
+
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after,
+        .swiper-button-next:after,
+        .swiper-button-next:after {
+            bottom: 80px;
+            position: relative;
+            font-size: 30px;
+        }
+
+        /* Facebook */
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-width: 320px;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 20px;
+
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 280px;
+            min-width: 280px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .fotos-projetos-facebook #carouselExampleControls .carousel-inner .carousel-item .img-carousel {
+            width: 280px;
+            min-width: 180px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook {
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .titulo-projeto-facebook {
+            width: 100%;
+            font-family: var(--body-font);
+            text-align: center;
+            color: rgb(14, 14, 14);
+            font-size: 26px;
+            font-weight: 500;
+            color: black;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-facebook .textos-projeto-facebook .desc-projeto-facebook {
+            padding: 10px;
+            margin: 0px;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .projeto-facebook .textos-projeto-facebook .botoes-facebook {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .projeto-facebook .textos-projeto-facebook .botoes-facebook .links-projetos .btn-grad {
+            padding: 16px 5px;
+            font-size: 14px;
+
+        }
+
+        /* Projeto-ds */
+
+        .container-xxl .skills-projetos .box-portfolio .projeto-ds {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-width: 320px;
+            margin-top: 20px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 280px;
+            min-width: 280px;
+            height: auto;
+            min-height: 0px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .projeto-ds .swiper .swiper-wrapper .swiper-slide .fotos-projetos-ds .slide {
+            height: auto;
+            min-height: 0px;
+            min-width: 350px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .fotos-projetos-ds #carouselControlsDs .carousel-inner .carousel-item .img-carousel {
+            width: 280px;
+            height: auto;
+            margin: 0px;
+            min-width: 180px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .textos-projeto-ds {
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .textos-projeto-ds .titulo-projeto-ds {
+            width: 100%;
+            font-family: var(--body-font);
+            text-align: center;
+            color: rgb(14, 14, 14);
+            font-size: 26px;
+            font-weight: 500;
+            color: black;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .textos-projeto-ds .desc-projeto-ds {
+            padding: 10px;
+            margin: 0px;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .textos-projeto-ds .botoes-ds {
+            width: 100%;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-xxl .skills-projetos .box-portfolio .swiper .swiper-wrapper .swiper-slide .projeto-ds .textos-projeto-ds .botoes-ds .links-projetos .btn-grad {
+            padding: 10px 5px;
+            font-size: 12px;
+            width: 80%;
+            min-width: 80px;
+        }
+
+        /* Meu-Github */
+
+        .container-xxl .skills-projetos .box-github {
+            width: 100vw;
+            flex-direction: column-reverse;
+            margin-top: 20px;
+            border-radius: 0px;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
+        }
+
+        .container-xxl .skills-projetos .box-github .img-projetos {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-xxl .skills-projetos .box-github .imgs-projetos {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        .container-xxl .skills-projetos .box-github .imgs-projetos .svg-projetos {
+
+            width: 320px;
+
+        }
+
+        .container-xxl .skills-projetos .box-github .imgs-projetos .img-projetos {
+            width: 120px;
+        }
+
+        .container-xxl .skills-projetos .box-github .box-textos-git {
+
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-xxl .skills-projetos .box-github .box-textos-git .titulo-git {
+            margin: 5px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+
+        }
+
+        .container-xxl .skills-projetos .box-github .box-textos-git .desc-git {
+            padding: 10px;
+        }
+
+        .container-xxl .skills-projetos .box-github .botoes-git {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+        }
+
+        /* Portfolio */
+
+        .container-xxl .skills-projetos .section-portfolio-titulo {
+            margin: 0px
+        }
+
+        /* Footer */
+        .footer .footer-box .container {
+            padding-left: 15px;
+            row-gap: 1rem;
+            align-items: flex-start;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer .footer-box .container .links-footer {
+            flex-direction: column;
+        }
+
+    }
